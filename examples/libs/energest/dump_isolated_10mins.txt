@@ -1,0 +1,1092 @@
+rlwrap ../../../tools/serial-io/serialdump -b115200 /dev/ttyUSB0
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            22s LPM       528s DEEP LPM    0s  Total time 550s
+ Radio LISTEN  550s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+
+Energest:
+ CPU            22s LPM       538s DEEP LPM    0s  Total time 560s
+ Radio LISTEN  560s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            22s LPM       547s DEEP LPM    0s  Total time 570s
+ Radio LISTEN  570s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+
+Energest:
+ CPU            22s LPM       557s DEEP LPM    0s  Total time 580s
+ Radio LISTEN  580s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+
+Energest:
+ CPU            23s LPM       567s DEEP LPM    0s  Total time 590s
+ Radio LISTEN  590s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            23s LPM       577s DEEP LPM    0s  Total time 600s
+ Radio LISTEN  600s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            23s LPM       586s DEEP LPM    0s  Total time 610s
+ Radio LISTEN  610s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            23s LPM       596s DEEP LPM    0s  Total time 620s
+ Radio LISTEN  620s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+
+Energest:
+ CPU            24s LPM       606s DEEP LPM    0s  Total time 630s
+ Radio LISTEN  630s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+
+Energest:
+ CPU            24s LPM       616s DEEP LPM    0s  Total time 640s
+ Radio LISTEN  640s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            24s LPM       625s DEEP LPM    0s  Total time 650s
+ Radio LISTEN  650s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            24s LPM       635s DEEP LPM    0s  Total time 660s
+ Radio LISTEN  660s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+
+Energest:
+ CPU            25s LPM       645s DEEP LPM    0s  Total time 670s
+ Radio LISTEN  670s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+
+Energest:
+ CPU            25s LPM       655s DEEP LPM    0s  Total time 680s
+ Radio LISTEN  680s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            25s LPM       664s DEEP LPM    0s  Total time 690s
+ Radio LISTEN  690s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            25s LPM       674s DEEP LPM    0s  Total time 700s
+ Radio LISTEN  700s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            26s LPM       684s DEEP LPM    0s  Total time 710s
+ Radio LISTEN  710s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            26s LPM       694s DEEP LPM    0s  Total time 720s
+ Radio LISTEN  720s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            26s LPM       703s DEEP LPM    0s  Total time 730s
+ Radio LISTEN  730s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            26s LPM       713s DEEP LPM    0s  Total time 740s
+ Radio LISTEN  740s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            27s LPM       723s DEEP LPM    0s  Total time 750s
+ Radio LISTEN  750s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+
+Energest:
+ CPU            27s LPM       733s DEEP LPM    0s  Total time 760s
+ Radio LISTEN  760s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            27s LPM       742s DEEP LPM    0s  Total time 770s
+ Radio LISTEN  770s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            28s LPM       752s DEEP LPM    0s  Total time 780s
+ Radio LISTEN  780s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            28s LPM       762s DEEP LPM    0s  Total time 790s
+ Radio LISTEN  790s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+
+Energest:
+ CPU            28s LPM       772s DEEP LPM    0s  Total time 800s
+ Radio LISTEN  800s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+
+Energest:
+ CPU            28s LPM       781s DEEP LPM    0s  Total time 810s
+ Radio LISTEN  810s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+
+Energest:
+ CPU            29s LPM       791s DEEP LPM    0s  Total time 820s
+ Radio LISTEN  820s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            29s LPM       801s DEEP LPM    0s  Total time 830s
+ Radio LISTEN  830s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scan: received packet (48 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 1, FCF 61 88
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0xe668/eec1.0000.0000.0000 to 0xe668/c1d2.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 48)
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            29s LPM       810s DEEP LPM    0s  Total time 840s
+ Radio LISTEN  840s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            29s LPM       820s DEEP LPM    0s  Total time 850s
+ Radio LISTEN  850s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+
+Energest:
+ CPU            30s LPM       830s DEEP LPM    0s  Total time 860s
+ Radio LISTEN  860s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            30s LPM       840s DEEP LPM    0s  Total time 870s
+ Radio LISTEN  870s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+
+Energest:
+ CPU            30s LPM       849s DEEP LPM    0s  Total time 880s
+ Radio LISTEN  880s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            31s LPM       859s DEEP LPM    0s  Total time 890s
+ Radio LISTEN  890s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            31s LPM       869s DEEP LPM    0s  Total time 900s
+ Radio LISTEN  900s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+
+Energest:
+ CPU            31s LPM       879s DEEP LPM    0s  Total time 910s
+ Radio LISTEN  910s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+
+Energest:
+ CPU            31s LPM       888s DEEP LPM    0s  Total time 920s
+ Radio LISTEN  920s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+
+Energest:
+ CPU            32s LPM       898s DEEP LPM    0s  Total time 930s
+ Radio LISTEN  930s TRANSMIT    0s OFF         0s
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            32s LPM       908s DEEP LPM    0s  Total time 940s
+ Radio LISTEN  940s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            32s LPM       917s DEEP LPM    0s  Total time 950s
+ Radio LISTEN  950s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            32s LPM       927s DEEP LPM    0s  Total time 960s
+ Radio LISTEN  960s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            33s LPM       937s DEEP LPM    0s  Total time 970s
+ Radio LISTEN  970s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            33s LPM       947s DEEP LPM    0s  Total time 980s
+ Radio LISTEN  980s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+
+Energest:
+ CPU            33s LPM       956s DEEP LPM    0s  Total time 990s
+ Radio LISTEN  990s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+
+Energest:
+ CPU            33s LPM       966s DEEP LPM    0s  Total time 1000s
+ Radio LISTEN 1000s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+
+Energest:
+ CPU            34s LPM       976s DEEP LPM    0s  Total time 1010s
+ Radio LISTEN 1010s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            34s LPM       986s DEEP LPM    0s  Total time 1020s
+ Radio LISTEN 1020s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+
+Energest:
+ CPU            34s LPM       995s DEEP LPM    0s  Total time 1030s
+ Radio LISTEN 1030s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scan: received packet (53 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 1, FCF 61 88
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0xe668/c1d2.0000.0000.0000 to 0xe668/eec1.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 53)
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scan: received packet (53 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 1, FCF 61 88
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0xe668/c1d2.0000.0000.0000 to 0xe668/eec1.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 53)
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            34s LPM      1005s DEEP LPM    0s  Total time 1040s
+ Radio LISTEN 1040s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+
+Energest:
+ CPU            35s LPM      1015s DEEP LPM    0s  Total time 1050s
+ Radio LISTEN 1050s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+
+Energest:
+ CPU            35s LPM      1025s DEEP LPM    0s  Total time 1060s
+ Radio LISTEN 1060s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            35s LPM      1034s DEEP LPM    0s  Total time 1070s
+ Radio LISTEN 1070s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            36s LPM      1044s DEEP LPM    0s  Total time 1080s
+ Radio LISTEN 1080s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            36s LPM      1054s DEEP LPM    0s  Total time 1090s
+ Radio LISTEN 1090s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            36s LPM      1064s DEEP LPM    0s  Total time 1100s
+ Radio LISTEN 1100s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+
+Energest:
+ CPU            36s LPM      1073s DEEP LPM    0s  Total time 1110s
+ Radio LISTEN 1110s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+
+Energest:
+ CPU            37s LPM      1083s DEEP LPM    0s  Total time 1120s
+ Radio LISTEN 1120s TRANSMIT    0s OFF         0s
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            37s LPM      1093s DEEP LPM    0s  Total time 1130s
+ Radio LISTEN 1130s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+
+Energest:
+ CPU            37s LPM      1102s DEEP LPM    0s  Total time 1140s
+ Radio LISTEN 1140s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            37s LPM      1112s DEEP LPM    0s  Total time 1150s
+ Radio LISTEN 1150s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            38s LPM      1122s DEEP LPM    0s  Total time 1160s
+ Radio LISTEN 1160s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+[INFO: RPL       ] sending a DIS to ff02::1a
+[DBG : IPv6      ] Upper layer checksum len: 6 from: 40
+[INFO: ICMPv6    ] Sending ICMPv6 packet to ff02::1a, type 155, code 0, len 2
+[INFO: TCP/IP    ] output: sending to (NULL LL addr)
+[INFO: 6LoWPAN   ] output: sending IPv6 packet with len 46
+[WARN: 6LoWPAN   ] output: failed to calculate payload size - dropping packet
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 26
+
+Energest:
+ CPU            38s LPM      1132s DEEP LPM    0s  Total time 1170s
+ Radio LISTEN 1170s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scanning on channel 20
+
+Energest:
+ CPU            38s LPM      1141s DEEP LPM    0s  Total time 1180s
+ Radio LISTEN 1180s TRANSMIT    0s OFF         0s
+[INFO: TSCH      ] scanning on channel 26
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 15
+[INFO: TSCH      ] scan: received packet (3 bytes) on channel 15
+[INFO: TSCH Pkt  ] ! parse_eb: frame is not a valid TSCH beacon. Frame version 0, type 2, FCF 02 00
+[INFO: TSCH Pkt  ] ! parse_eb: frame was from 0x0/0000.0000.0000.0000 to 0x0/0000.0000.0000.0000
+[DBG : TSCH      ] ! failed to parse EB (len 3)
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 25
+[INFO: TSCH      ] scanning on channel 20
+[INFO: TSCH      ] scanning on channel 15
