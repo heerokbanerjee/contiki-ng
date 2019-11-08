@@ -32,6 +32,7 @@
 
 #include "contiki.h"
 #include "sys/energest.h"
+#include "tsch.h"
 
 PROCESS(energest_example_process, "energest example process");
 AUTOSTART_PROCESSES(&energest_example_process);
@@ -41,6 +42,9 @@ to_seconds(uint64_t time)
 {
   return (unsigned long)(time / ENERGEST_SECOND);
 }
+
+
+
 /*---------------------------------------------------------------------------*/
 /*
  * This Process will periodically print energest values for the last minute.
@@ -49,13 +53,25 @@ to_seconds(uint64_t time)
 PROCESS_THREAD(energest_example_process, ev, data)
 {
   static struct etimer periodic_timer;
+  static struct stimer second_timer;
+  static bool once = true;
 
   PROCESS_BEGIN();
+  //tsch_set_eb_period(1);
+
+
+
 
   etimer_set(&periodic_timer, CLOCK_SECOND * 10);
   while(1) {
+
+
+
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
     etimer_reset(&periodic_timer);
+
+
+
 
     /*
      * Update all energest times. Should always be called before energest
@@ -63,18 +79,55 @@ PROCESS_THREAD(energest_example_process, ev, data)
      */
     energest_flush();
 
-    printf("\nEnergest:\n");
-    printf(" CPU          %4lus LPM      %4lus DEEP LPM %4lus  Total time %lus\n",
-           to_seconds(energest_type_time(ENERGEST_TYPE_CPU)),
-           to_seconds(energest_type_time(ENERGEST_TYPE_LPM)),
-           to_seconds(energest_type_time(ENERGEST_TYPE_DEEP_LPM)),
-           to_seconds(ENERGEST_GET_TOTAL_TIME()));
-    printf(" Radio LISTEN %4lus TRANSMIT %4lus OFF      %4lus\n",
-           to_seconds(energest_type_time(ENERGEST_TYPE_LISTEN)),
-           to_seconds(energest_type_time(ENERGEST_TYPE_TRANSMIT)),
-           to_seconds(ENERGEST_GET_TOTAL_TIME()
-                      - energest_type_time(ENERGEST_TYPE_TRANSMIT)
-                      - energest_type_time(ENERGEST_TYPE_LISTEN)));
+    int neighbours = rpl_neighbor_count();
+
+
+
+    if (neighbours == 1) {
+
+        if (once){
+		once = false;
+    		printf("I got neighbours! %d\n", neighbours);
+		printf("Start the timer for 10 min!\n");
+        	stimer_set(&second_timer, 600); // Start the timer.
+        }
+   
+	if (!once && stimer_expired(&second_timer)){ // Check if the stimer has expired. 
+    	        printf("TIMER EXPIRED\n");
+                break;
+        }
+
+        unsigned long timer = stimer_remaining(&second_timer);
+	printf("Time left: %ld", timer);
+
+	printf("\nEnergest:\n");
+	printf(" CPU          %4lus LPM      %4lus DEEP LPM %4lus  Total time %lus\n",
+	   to_seconds(energest_type_time(ENERGEST_TYPE_CPU)),
+	   to_seconds(energest_type_time(ENERGEST_TYPE_LPM)),
+	   to_seconds(energest_type_time(ENERGEST_TYPE_DEEP_LPM)),
+	   to_seconds(ENERGEST_GET_TOTAL_TIME()));
+	printf(" Radio LISTEN %4lus TRANSMIT %4lus OFF      %4lus\n",
+	   to_seconds(energest_type_time(ENERGEST_TYPE_LISTEN)),
+	   to_seconds(energest_type_time(ENERGEST_TYPE_TRANSMIT)),
+	   to_seconds(ENERGEST_GET_TOTAL_TIME()
+		      - energest_type_time(ENERGEST_TYPE_TRANSMIT)
+		      - energest_type_time(ENERGEST_TYPE_LISTEN)));
+    }
+
+    //int test = tsch_rpl_callback_joining_network();
+
+    //if (tsch_is_coordinator && tsch_is_associated){
+    	//printf("\nCOORDINATOR:");
+        //if (stimer_expired(&second_timer)){ // Check if the stimer has expired. 
+    	    //printf("TIMER DONE:");
+        //}
+
+    //} else {
+    	//printf("\nNON-COORDINATOR:");
+    //}
+
+
+
   }
 
   PROCESS_END();
