@@ -111,7 +111,10 @@ PROCESS_THREAD(energest_example_process, ev, data)
 
     if (neighbours == 1) {
 	printf("\nSTOP\n");
-        break;
+        start = false;
+        i += 1;
+        tsch_disassociate(); //break connection
+        tsch_set_eb_period(CLOCK_SECOND * 1 + i);
     }
 
 
