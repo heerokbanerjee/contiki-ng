@@ -35,7 +35,8 @@
 
 #endif /* PROJECT_CONF_H_ */
 
-//minimal 6Tisch is enabled as default
+#define LOG_CONF_LEVEL_MAC                         LOG_LEVEL_DBG
+//#undef TSCH_SCHEDULE_CONF_WITH_6TISCH_MINIMAL          
 #define QUEUEBUF_CONF_NUM				4
 #define NBR_TABLE_CONF_MAX_NEIGHBORS			4
 #define NETSTACK_MAX_ROUTE_ENTRIES			4

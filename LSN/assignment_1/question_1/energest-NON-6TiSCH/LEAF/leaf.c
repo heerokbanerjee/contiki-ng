@@ -32,18 +32,27 @@
 
 #include "contiki.h"
 #include "sys/energest.h"
+#include "sys/stimer.h"
 #include "tsch.h"
 
 PROCESS(energest_example_process, "energest example process");
 AUTOSTART_PROCESSES(&energest_example_process);
 /*---------------------------------------------------------------------------*/
+
+static bool start = false;
+
 static inline unsigned long
 to_seconds(uint64_t time)
 {
   return (unsigned long)(time / ENERGEST_SECOND);
 }
 
-
+void
+tsch_rpl_callback_joining_network_new(void) //gets called when connection is established
+{
+    printf("\nJOINED NETWORK\n");
+    start = true;
+}
 
 /*---------------------------------------------------------------------------*/
 /*
@@ -57,48 +66,40 @@ PROCESS_THREAD(energest_example_process, ev, data)
   static bool once = true;
 
   PROCESS_BEGIN();
-  //tsch_set_eb_period(1);
-
-
-
 
   etimer_set(&periodic_timer, CLOCK_SECOND * 10);
   while(1) {
 
 
-
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
-    etimer_reset(&periodic_timer);
+    etimer_reset(&periodic_timer);	
+
+    //when joined a network start the timer once
+    if(start && once) {
+	stimer_set(&second_timer, 600); // Start the timer.
+        printf("\nTimer started for 600 seconds\n");
+        once = false;
+    }
+    //if we're in a network and the timer is expired stop the measurements
+    if(start && stimer_expired(&second_timer)) {
+      printf("\n10 minutes expired\n");
+      printf("\nStopping process\n");
+      break;
+    }
 
 
 
+    if (start) {
 
-    /*
-     * Update all energest times. Should always be called before energest
-     * times are read.
-     */
-    energest_flush();
-
-    int neighbours = rpl_neighbor_count();
-
-
-
-    if (neighbours == 1) {
-
-        if (once){
-		once = false;
-    		printf("I got neighbours! %d\n", neighbours);
-		printf("Start the timer for 10 min!\n");
-        	stimer_set(&second_timer, 600); // Start the timer.
-        }
-   
-	if (!once && stimer_expired(&second_timer)){ // Check if the stimer has expired. 
-    	        printf("TIMER EXPIRED\n");
-                break;
-        }
-
+	//timer
         unsigned long timer = stimer_remaining(&second_timer);
-	printf("Time left: %ld", timer);
+	printf("\nTime left: %ld\n", timer);
+
+	/*
+	* Update all energest times. Should always be called before energest
+	* times are read.
+	*/
+	energest_flush();
 
 	printf("\nEnergest:\n");
 	printf(" CPU          %4lus LPM      %4lus DEEP LPM %4lus  Total time %lus\n",
@@ -114,18 +115,7 @@ PROCESS_THREAD(energest_example_process, ev, data)
 		      - energest_type_time(ENERGEST_TYPE_LISTEN)));
     }
 
-    //int test = tsch_rpl_callback_joining_network();
-
-    //if (tsch_is_coordinator && tsch_is_associated){
-    	//printf("\nCOORDINATOR:");
-        //if (stimer_expired(&second_timer)){ // Check if the stimer has expired. 
-    	    //printf("TIMER DONE:");
-        //}
-
-    //} else {
-    	//printf("\nNON-COORDINATOR:");
-    //}
-
+    
 
 
   }

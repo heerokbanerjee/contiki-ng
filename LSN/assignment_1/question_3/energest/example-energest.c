@@ -53,11 +53,13 @@ to_seconds(uint64_t time)
 PROCESS_THREAD(energest_example_process, ev, data)
 {
   static struct etimer periodic_timer;
-  static struct stimer second_timer;
-  static bool once = true;
+  //static struct stimer second_timer;
+  //static bool once = true;
 
   PROCESS_BEGIN();
   //tsch_set_eb_period(1);
+  tsch_schedule_init();
+  
 
 
 
@@ -79,26 +81,27 @@ PROCESS_THREAD(energest_example_process, ev, data)
      */
     energest_flush();
 
-    int neighbours = rpl_neighbor_count();
+    //int neighbours = rpl_neighbor_count();
 
-
-
-    if (neighbours == 1) {
-
-        if (once){
-		once = false;
-    		printf("I got neighbours! %d\n", neighbours);
-		printf("Start the timer for 10 min!\n");
-        	stimer_set(&second_timer, 600); // Start the timer.
+    struct tsch_slotframe *sf = tsch_schedule_get_slotframe_by_handle(0);
+    if (sf == NULL){
+	printf("NO such slotframe found");
+    } else {
+        printf("Handle: %d", sf->handle);
+        struct tsch_link *tl = tsch_schedule_add_link(sf, 0,LINK_TYPE_NORMAL, &tsch_broadcast_address, 1, 0);
+        if (tl == NULL){
+	    printf("NO such link found");
+        } else {
+            printf("channel: %d", tl->channel_offset);
+            tsch_queue_add_packet(&tsch_broadcast_address, 8, )
         }
-   
-	if (!once && stimer_expired(&second_timer)){ // Check if the stimer has expired. 
-    	        printf("TIMER EXPIRED\n");
-                break;
-        }
+        
+    }
 
-        unsigned long timer = stimer_remaining(&second_timer);
-	printf("Time left: %ld", timer);
+    
+
+        //unsigned long timer = stimer_remaining(&second_timer);
+	//printf("Time left: %ld", timer);
 
 	printf("\nEnergest:\n");
 	printf(" CPU          %4lus LPM      %4lus DEEP LPM %4lus  Total time %lus\n",
@@ -112,7 +115,10 @@ PROCESS_THREAD(energest_example_process, ev, data)
 	   to_seconds(ENERGEST_GET_TOTAL_TIME()
 		      - energest_type_time(ENERGEST_TYPE_TRANSMIT)
 		      - energest_type_time(ENERGEST_TYPE_LISTEN)));
-    }
+
+	printf("\nSCHEDULE:\n");
+	tsch_schedule_print();
+    
 
     //int test = tsch_rpl_callback_joining_network();
 

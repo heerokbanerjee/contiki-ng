@@ -1,0 +1,369 @@
+rlwrap ../../../../../tools/serial-io/serialdump -b115200 /dev/ttyUSB1
+
+JOINED NETWORK
+
+Timer started for 600 seconds
+
+Time left: 600
+
+Energest:
+ CPU             1s LPM        59s DEEP LPM    0s  Total time 60s
+ Radio LISTEN   58s TRANSMIT    0s OFF         2s
+
+Time left: 590
+
+Energest:
+ CPU             1s LPM        68s DEEP LPM    0s  Total time 70s
+ Radio LISTEN   58s TRANSMIT    0s OFF        11s
+
+Time left: 580
+
+Energest:
+ CPU             1s LPM        78s DEEP LPM    0s  Total time 80s
+ Radio LISTEN   59s TRANSMIT    0s OFF        21s
+
+Time left: 570
+
+Energest:
+ CPU             1s LPM        88s DEEP LPM    0s  Total time 90s
+ Radio LISTEN   59s TRANSMIT    0s OFF        31s
+
+Time left: 560
+
+Energest:
+ CPU             1s LPM        98s DEEP LPM    0s  Total time 100s
+ Radio LISTEN   59s TRANSMIT    0s OFF        40s
+
+Time left: 550
+
+Energest:
+ CPU             1s LPM       108s DEEP LPM    0s  Total time 110s
+ Radio LISTEN   60s TRANSMIT    0s OFF        50s
+
+Time left: 540
+
+Energest:
+ CPU             2s LPM       118s DEEP LPM    0s  Total time 120s
+ Radio LISTEN   60s TRANSMIT    0s OFF        60s
+
+Time left: 530
+
+Energest:
+ CPU             2s LPM       128s DEEP LPM    0s  Total time 130s
+ Radio LISTEN   60s TRANSMIT    0s OFF        69s
+
+Time left: 520
+
+Energest:
+ CPU             2s LPM       138s DEEP LPM    0s  Total time 140s
+ Radio LISTEN   61s TRANSMIT    0s OFF        79s
+
+Time left: 510
+
+Energest:
+ CPU             2s LPM       148s DEEP LPM    0s  Total time 150s
+ Radio LISTEN   61s TRANSMIT    0s OFF        89s
+
+Time left: 500
+
+Energest:
+ CPU             2s LPM       158s DEEP LPM    0s  Total time 160s
+ Radio LISTEN   61s TRANSMIT    0s OFF        98s
+
+Time left: 490
+
+Energest:
+ CPU             2s LPM       168s DEEP LPM    0s  Total time 170s
+ Radio LISTEN   62s TRANSMIT    0s OFF       108s
+
+Time left: 480
+
+Energest:
+ CPU             2s LPM       178s DEEP LPM    0s  Total time 180s
+ Radio LISTEN   62s TRANSMIT    0s OFF       118s
+
+Time left: 470
+
+Energest:
+ CPU             2s LPM       187s DEEP LPM    0s  Total time 190s
+ Radio LISTEN   62s TRANSMIT    0s OFF       127s
+
+Time left: 460
+
+Energest:
+ CPU             2s LPM       197s DEEP LPM    0s  Total time 200s
+ Radio LISTEN   63s TRANSMIT    0s OFF       137s
+
+Time left: 450
+
+Energest:
+ CPU             2s LPM       207s DEEP LPM    0s  Total time 210s
+ Radio LISTEN   63s TRANSMIT    0s OFF       146s
+
+Time left: 440
+
+Energest:
+ CPU             2s LPM       217s DEEP LPM    0s  Total time 220s
+ Radio LISTEN   63s TRANSMIT    0s OFF       156s
+
+Time left: 430
+
+Energest:
+ CPU             2s LPM       227s DEEP LPM    0s  Total time 230s
+ Radio LISTEN   64s TRANSMIT    0s OFF       166s
+
+Time left: 420
+
+Energest:
+ CPU             2s LPM       237s DEEP LPM    0s  Total time 240s
+ Radio LISTEN   64s TRANSMIT    0s OFF       175s
+
+Time left: 410
+
+Energest:
+ CPU             3s LPM       247s DEEP LPM    0s  Total time 250s
+ Radio LISTEN   64s TRANSMIT    0s OFF       185s
+
+Time left: 400
+
+Energest:
+ CPU             3s LPM       257s DEEP LPM    0s  Total time 260s
+ Radio LISTEN   65s TRANSMIT    0s OFF       195s
+
+Time left: 390
+
+Energest:
+ CPU             3s LPM       267s DEEP LPM    0s  Total time 270s
+ Radio LISTEN   65s TRANSMIT    0s OFF       204s
+
+Time left: 380
+
+Energest:
+ CPU             3s LPM       277s DEEP LPM    0s  Total time 280s
+ Radio LISTEN   65s TRANSMIT    0s OFF       214s
+
+Time left: 370
+
+Energest:
+ CPU             3s LPM       287s DEEP LPM    0s  Total time 290s
+ Radio LISTEN   66s TRANSMIT    0s OFF       224s
+
+Time left: 360
+
+Energest:
+ CPU             3s LPM       297s DEEP LPM    0s  Total time 300s
+ Radio LISTEN   66s TRANSMIT    0s OFF       233s
+
+Time left: 350
+
+Energest:
+ CPU             3s LPM       306s DEEP LPM    0s  Total time 310s
+ Radio LISTEN   67s TRANSMIT    0s OFF       243s
+
+Time left: 340
+
+Energest:
+ CPU             3s LPM       316s DEEP LPM    0s  Total time 320s
+ Radio LISTEN   67s TRANSMIT    0s OFF       253s
+
+Time left: 330
+
+Energest:
+ CPU             3s LPM       326s DEEP LPM    0s  Total time 330s
+ Radio LISTEN   67s TRANSMIT    0s OFF       262s
+
+Time left: 320
+
+Energest:
+ CPU             3s LPM       336s DEEP LPM    0s  Total time 340s
+ Radio LISTEN   68s TRANSMIT    0s OFF       272s
+
+Time left: 310
+
+Energest:
+ CPU             3s LPM       346s DEEP LPM    0s  Total time 350s
+ Radio LISTEN   68s TRANSMIT    0s OFF       282s
+
+Time left: 300
+
+Energest:
+ CPU             3s LPM       356s DEEP LPM    0s  Total time 360s
+ Radio LISTEN   68s TRANSMIT    0s OFF       291s
+
+Time left: 290
+
+Energest:
+ CPU             3s LPM       366s DEEP LPM    0s  Total time 370s
+ Radio LISTEN   69s TRANSMIT    0s OFF       301s
+
+Time left: 280
+
+Energest:
+ CPU             3s LPM       376s DEEP LPM    0s  Total time 380s
+ Radio LISTEN   69s TRANSMIT    0s OFF       311s
+
+Time left: 270
+
+Energest:
+ CPU             4s LPM       386s DEEP LPM    0s  Total time 390s
+ Radio LISTEN   69s TRANSMIT    0s OFF       320s
+
+Time left: 260
+
+Energest:
+ CPU             4s LPM       396s DEEP LPM    0s  Total time 400s
+ Radio LISTEN   70s TRANSMIT    0s OFF       330s
+
+Time left: 250
+
+Energest:
+ CPU             4s LPM       406s DEEP LPM    0s  Total time 410s
+ Radio LISTEN   70s TRANSMIT    0s OFF       339s
+
+Time left: 240
+
+Energest:
+ CPU             4s LPM       416s DEEP LPM    0s  Total time 420s
+ Radio LISTEN   70s TRANSMIT    0s OFF       349s
+
+Time left: 230
+
+Energest:
+ CPU             4s LPM       426s DEEP LPM    0s  Total time 430s
+ Radio LISTEN   71s TRANSMIT    0s OFF       359s
+
+Time left: 220
+
+Energest:
+ CPU             4s LPM       436s DEEP LPM    0s  Total time 440s
+ Radio LISTEN   71s TRANSMIT    0s OFF       368s
+
+Time left: 210
+
+Energest:
+ CPU             4s LPM       445s DEEP LPM    0s  Total time 450s
+ Radio LISTEN   71s TRANSMIT    0s OFF       378s
+
+Time left: 200
+
+Energest:
+ CPU             4s LPM       455s DEEP LPM    0s  Total time 460s
+ Radio LISTEN   72s TRANSMIT    0s OFF       388s
+
+Time left: 190
+
+Energest:
+ CPU             4s LPM       465s DEEP LPM    0s  Total time 470s
+ Radio LISTEN   72s TRANSMIT    0s OFF       397s
+
+Time left: 180
+
+Energest:
+ CPU             4s LPM       475s DEEP LPM    0s  Total time 480s
+ Radio LISTEN   72s TRANSMIT    0s OFF       407s
+
+Time left: 170
+
+Energest:
+ CPU             5s LPM       485s DEEP LPM    0s  Total time 490s
+ Radio LISTEN   73s TRANSMIT    0s OFF       417s
+
+Time left: 160
+
+Energest:
+ CPU             5s LPM       495s DEEP LPM    0s  Total time 500s
+ Radio LISTEN   73s TRANSMIT    0s OFF       426s
+
+Time left: 150
+
+Energest:
+ CPU             5s LPM       505s DEEP LPM    0s  Total time 510s
+ Radio LISTEN   73s TRANSMIT    0s OFF       436s
+
+Time left: 140
+
+Energest:
+ CPU             5s LPM       515s DEEP LPM    0s  Total time 520s
+ Radio LISTEN   74s TRANSMIT    0s OFF       446s
+
+Time left: 130
+
+Energest:
+ CPU             5s LPM       525s DEEP LPM    0s  Total time 530s
+ Radio LISTEN   74s TRANSMIT    0s OFF       455s
+
+Time left: 120
+
+Energest:
+ CPU             5s LPM       535s DEEP LPM    0s  Total time 540s
+ Radio LISTEN   75s TRANSMIT    0s OFF       465s
+
+Time left: 110
+
+Energest:
+ CPU             5s LPM       545s DEEP LPM    0s  Total time 550s
+ Radio LISTEN   75s TRANSMIT    0s OFF       475s
+
+Time left: 100
+
+Energest:
+ CPU             5s LPM       555s DEEP LPM    0s  Total time 560s
+ Radio LISTEN   75s TRANSMIT    0s OFF       484s
+
+Time left: 90
+
+Energest:
+ CPU             5s LPM       564s DEEP LPM    0s  Total time 570s
+ Radio LISTEN   76s TRANSMIT    0s OFF       494s
+
+Time left: 80
+
+Energest:
+ CPU             5s LPM       574s DEEP LPM    0s  Total time 580s
+ Radio LISTEN   76s TRANSMIT    0s OFF       504s
+
+Time left: 70
+
+Energest:
+ CPU             5s LPM       584s DEEP LPM    0s  Total time 590s
+ Radio LISTEN   76s TRANSMIT    0s OFF       513s
+
+Time left: 60
+
+Energest:
+ CPU             5s LPM       594s DEEP LPM    0s  Total time 600s
+ Radio LISTEN   77s TRANSMIT    0s OFF       523s
+
+Time left: 50
+
+Energest:
+ CPU             5s LPM       604s DEEP LPM    0s  Total time 610s
+ Radio LISTEN   77s TRANSMIT    0s OFF       533s
+
+Time left: 40
+
+Energest:
+ CPU             5s LPM       614s DEEP LPM    0s  Total time 620s
+ Radio LISTEN   77s TRANSMIT    0s OFF       542s
+
+Time left: 30
+
+Energest:
+ CPU             5s LPM       624s DEEP LPM    0s  Total time 630s
+ Radio LISTEN   78s TRANSMIT    0s OFF       552s
+
+Time left: 20
+
+Energest:
+ CPU             6s LPM       634s DEEP LPM    0s  Total time 640s
+ Radio LISTEN   78s TRANSMIT    0s OFF       561s
+
+Time left: 10
+
+Energest:
+ CPU             6s LPM       644s DEEP LPM    0s  Total time 650s
+ Radio LISTEN   78s TRANSMIT    0s OFF       571s
+
+10 minutes expired
+
+Stopping process
