@@ -1,0 +1,102 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Nov  9 18:40:21 2019
+
+@author: heerokbanerjee
+"""
+
+import pandas as pd
+import re
+import sys
+
+try:
+    test,inFilename,outFilename=sys.argv
+
+except:
+    print("Please specify both input and output filenames (without extensions)!")
+    exit(1)
+
+myframe=pd.DataFrame()
+
+pattern=r'[ ]*CPU[ ]*(\d+)s[ ]*LPM[ ]*(\d+)s[ ]*DEEP LPM[ ]*'\
+        +r'(\d+)s[ ]*Total time[ ]*(\d+)s[ ]*[\n]'\
+        +r'*[ ]*Radio LISTEN[ ]*(\d+)s[ ]*TRANSMIT[ ]*(\d+)s[ ]*OFF[ ]*(\d+)s'
+file=open(inFilename+'.txt','r').read()
+stats=re.findall(pattern,file)
+
+#Energy consumption parameters
+inp_volt=3.3
+
+### Device Profiling (in Amps)
+CPU_profile_rate=15.35*pow(10,-3)
+LPM_profile_rate=9.59*pow(10,-3)
+DLPM_profile_rate=2.58*pow(10,-3)
+listen_profile_rate=28.32*pow(10,-3)
+Rx_profile_rate=30.14*pow(10,-3)
+Tx_profile_rate=31.12*pow(10,-3)
+
+
+### CC2538 datasheet (in Amps)
+CPU_datasheet_rate=20*pow(10,-3)
+LPM_datasheet_rate=0.6*pow(10,-3)
+DLPM_datasheet_rate=0.0013*pow(10,-3)
+listen_datasheet_rate=24*pow(10,-3)
+Rx_datasheet_rate=27*pow(10,-3)
+Tx_datasheet_rate=34*pow(10,-3)
+
+
+
+for values in stats:
+    #print(values)
+    #CPU consumption
+    energy_CPU_profile=CPU_profile_rate*float(values[0])*inp_volt
+    energy_CPU_datasheet=CPU_datasheet_rate*float(values[0])*inp_volt
+    #LPM consumption
+    energy_LPM_profile=LPM_profile_rate*float(values[1])*inp_volt
+    energy_LPM_datasheet=LPM_datasheet_rate*float(values[1])*inp_volt
+    #DeepLPM consumption
+    energy_DLPM_profile=DLPM_profile_rate*float(values[2])*inp_volt
+    energy_DLPM_datasheet=DLPM_datasheet_rate*float(values[2])*inp_volt
+    #Listen consumption
+    energy_listen_profile=listen_profile_rate*float(values[3])*inp_volt
+    energy_listen_datasheet=listen_datasheet_rate*float(values[3])*inp_volt
+    #Rx consumption
+    energy_Rx_profile=Rx_profile_rate*float(values[4])*inp_volt
+    energy_Rx_datasheet=Rx_datasheet_rate*float(values[4])*inp_volt
+    #Tx consumption
+    energy_Tx_profile=Tx_profile_rate*float(values[5])*inp_volt
+    energy_Tx_datasheet=Tx_datasheet_rate*float(values[5])*inp_volt
+    #total consumption
+    energy_total_profile=energy_CPU_profile+energy_LPM_profile+ \
+                        energy_DLPM_profile+energy_listen_profile+ \
+                        energy_Rx_profile+energy_Tx_profile
+    energy_total_datasheet=energy_CPU_datasheet+energy_LPM_datasheet+ \
+                      energy_DLPM_datasheet+energy_listen_datasheet+ \
+                      energy_Rx_datasheet+energy_Tx_datasheet
+    
+    
+    data=[[values[0],values[1],values[2],values[3],values[4],values[5],\
+          energy_CPU_profile,energy_LPM_profile,energy_DLPM_profile,\
+          energy_listen_profile,energy_Rx_profile,energy_Tx_profile,\
+          energy_total_profile,\
+          energy_CPU_datasheet,energy_LPM_datasheet,energy_DLPM_datasheet,\
+          energy_listen_datasheet,energy_Rx_datasheet,energy_Tx_datasheet,\
+          energy_total_datasheet]]
+    
+    frame=pd.DataFrame(data,columns=['CPU (in s)','LPM (in s)','DLPM (in s)',\
+                                     'listen (in s)','Rx (in s)','Tx (in s)',\
+                                     'CPU_Usage_profile (in J)','LPM_Usage_profile (in J)',\
+                                     'DLPM_Usage_profile (in J)','Listen_usage_profile (in J)',\
+                                     'Rx_usage_profile (in J)','Tx_usage_profile (in J)',\
+                                     'TotalUsage_profile (in J)',\
+                                     'CPU_Usage_datasheet (in J)','LPM_Usage_datasheet (in J)',\
+                                     'DLPM_Usage_datasheet (in J)','Listen_usage_datasheet (in J)',\
+                                     'Rx_usage_datasheet (in J)','Tx_usage_datasheet (in J)',\
+                                     'TotalUsage_datasheet (in J)'])
+    
+    myframe=myframe.append(frame)
+    
+    
+#Writing to csv File
+export_to_csv=myframe.to_csv('stats/'+outFilename+'.csv',index=None,header=True)
