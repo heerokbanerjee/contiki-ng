@@ -33,7 +33,7 @@
 #include "contiki.h"
 #include "sys/energest.h"
 #include "tsch.h"
-#include "tsch-types.h"
+#include "net/mac/tsch/sixtop/sixtop.h"
 
 PROCESS(energest_example_process, "energest example process");
 AUTOSTART_PROCESSES(&energest_example_process);
@@ -60,13 +60,13 @@ tsch_rpl_callback_joining_network_new(void)
 PROCESS_THREAD(energest_example_process, ev, data)
 {
   static struct etimer periodic_timer;
-  const linkaddr_t MAC_ROOT = {{ 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe3, 0x20 }};
+  //  const linkaddr_t MAC_ROOT = { { 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe3, 0x20 } };
   //static struct stimer second_timer;
-   static bool once = true;
+  //static bool once = true;
 
   PROCESS_BEGIN();
   tsch_schedule_init();
-  tsch_queue_add_nbr(MAC_LEAF);
+  
 
 
 
@@ -78,7 +78,8 @@ PROCESS_THREAD(energest_example_process, ev, data)
 
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
     etimer_reset(&periodic_timer);
-
+    
+    if (start) {
 
 
     /*
@@ -87,24 +88,20 @@ PROCESS_THREAD(energest_example_process, ev, data)
      */
     energest_flush();
     printf("\n\n");
- 
-    if (once) {
-	struct tsch_slotframe *sf = tsch_schedule_get_slotframe_by_handle(0); //shared slotframe
-	if (sf == NULL){
-	printf("NO such slotframe found"); // so node is not yet set to root-node (coordinator)
-	} else {
-	printf("Handle: %d", sf->handle);
-	struct tsch_link *tl = tsch_schedule_add_link(sf, 0,LINK_TYPE_NORMAL, &MAC_ROOT, 1, 0);
-	if (tl == NULL){
+
+    struct tsch_slotframe *sf = tsch_schedule_get_slotframe_by_handle(0);
+    if (sf == NULL){
+	printf("NO such slotframe found");
+    } else {
+        printf("Handle: %d", sf->handle);
+        struct tsch_link *tl = tsch_schedule_get_link_by_handle(1);
+        if (tl == NULL){
 	    printf("NO such link found");
-	} else {
-	    printf("handel: %d", tl->handle);
-	    printf("LINK CREATED FOR 0012.4b00.1932.e169");
-	    once = false;
-
-	}
-
-	}
+        } else {
+            printf("channel: %d", tl->channel_offset);
+            //printf("MAC-addr: %d", tl->addr);
+        }
+        
     }
     
     

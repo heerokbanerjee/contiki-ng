@@ -33,6 +33,7 @@
 #include "contiki.h"
 #include "sys/energest.h"
 #include "tsch.h"
+#include "tsch-types.h"
 
 PROCESS(energest_example_process, "energest example process");
 AUTOSTART_PROCESSES(&energest_example_process);
@@ -53,16 +54,20 @@ to_seconds(uint64_t time)
 PROCESS_THREAD(energest_example_process, ev, data)
 {
   static struct etimer periodic_timer;
-  static linkaddr_t* MAC_LEAF = 0012.4b00.1932.e320;
-  //static struct stimer second_timer;
-  //static bool once = true;
+//0012.4b00.1932.e169
+  //const linkaddr_t MAC_LEAF = {{ 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe3, 0x20 }};
+  const linkaddr_t MAC_LEAF = {{ 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe1, 0x69 }};
+
+  static bool once = true;
 
   PROCESS_BEGIN();
-  //tsch_set_eb_period(1);
-  //tsch_schedule_init();
-  
-
-
+  tsch_schedule_init();
+  tsch_queue_add_nbr(MAC_LEAF);
+  mac_callback_t sent;
+  void * ptr;
+    
+  struct tsch_packet *pp = tsch_queue_add_packet(MAC_LEAF, 8, sent, ptr);	
+ 
 
 
   etimer_set(&periodic_timer, CLOCK_SECOND * 10);
@@ -75,28 +80,34 @@ PROCESS_THREAD(energest_example_process, ev, data)
 
 
 
-
     /*
      * Update all energest times. Should always be called before energest
      * times are read.
      */
     energest_flush();
     printf("\n\n");
-
-    struct tsch_slotframe *sf = tsch_schedule_get_slotframe_by_handle(0); //shared slotframe
-    if (sf == NULL){
-	printf("NO such slotframe found");
-    } else {
-        printf("Handle: %d", sf->handle);
-        struct tsch_link *tl = tsch_schedule_add_link(sf, 0,LINK_TYPE_NORMAL, MAC_LEAF, 1, 0);
-        if (tl == NULL){
+ 
+    if (once) {
+	struct tsch_slotframe *sf = tsch_schedule_get_slotframe_by_handle(0); //shared slotframe
+	if (sf == NULL){
+	printf("NO such slotframe found"); // so node is not yet set to root-node (coordinator)
+	} else {
+	printf("Handle: %d", sf->handle);
+	struct tsch_link *tl = tsch_schedule_add_link(sf, 0,LINK_TYPE_NORMAL, &MAC_LEAF, 1, 0);
+	if (tl == NULL){
 	    printf("NO such link found");
-        } else {
-            printf("channel: %d", tl->channel_offset);
-        }
-        
-    }
+	} else {
+	    printf("handel: %d", tl->handle);
+	    printf("LINK CREATED FOR 0012.4b00.1932.e169");
+	    once = false;
+            struct tsch_neighbor * tn = tsch_queue_get_time_source();	
+            tsch_queue_packet_sent(tn, pp, tl, MAC_TX_OK);
+	}
 
+	}
+    }
+    
+   
 
 
 	printf("\nSCHEDULE:\n");

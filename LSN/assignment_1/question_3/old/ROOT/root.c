@@ -37,7 +37,6 @@
 
 PROCESS(energest_example_process, "energest example process");
 AUTOSTART_PROCESSES(&energest_example_process);
-static bool start = false;
 /*---------------------------------------------------------------------------*/
 static inline unsigned long
 to_seconds(uint64_t time)
@@ -45,12 +44,7 @@ to_seconds(uint64_t time)
   return (unsigned long)(time / ENERGEST_SECOND);
 }
 
-void
-tsch_rpl_callback_joining_network_new(void) 
-{
-    printf("\nJOINED NETWORK\n");
-    start = true;
-}
+
 
 /*---------------------------------------------------------------------------*/
 /*
@@ -60,13 +54,15 @@ tsch_rpl_callback_joining_network_new(void)
 PROCESS_THREAD(energest_example_process, ev, data)
 {
   static struct etimer periodic_timer;
-  const linkaddr_t MAC_ROOT = {{ 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe3, 0x20 }};
-  //static struct stimer second_timer;
-   static bool once = true;
+//0012.4b00.1932.e169
+  //const linkaddr_t MAC_LEAF = {{ 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe3, 0x20 }};
+  const linkaddr_t MAC_LEAF = {{ 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe1, 0x69 }};
+
+  static bool once = true;
 
   PROCESS_BEGIN();
   tsch_schedule_init();
-  tsch_queue_add_nbr(MAC_LEAF);
+  
 
 
 
@@ -94,24 +90,25 @@ PROCESS_THREAD(energest_example_process, ev, data)
 	printf("NO such slotframe found"); // so node is not yet set to root-node (coordinator)
 	} else {
 	printf("Handle: %d", sf->handle);
-	struct tsch_link *tl = tsch_schedule_add_link(sf, 0,LINK_TYPE_NORMAL, &MAC_ROOT, 1, 0);
+	struct tsch_link *tl = tsch_schedule_add_link(sf, 0,LINK_TYPE_NORMAL, &MAC_LEAF, 1, 0);
 	if (tl == NULL){
 	    printf("NO such link found");
 	} else {
 	    printf("handel: %d", tl->handle);
 	    printf("LINK CREATED FOR 0012.4b00.1932.e169");
 	    once = false;
-
 	}
 
 	}
     }
     
-    
+
+
+
 	printf("\nSCHEDULE:\n");
 	tsch_schedule_print();
 
-    }
+
   }
 
   PROCESS_END();
