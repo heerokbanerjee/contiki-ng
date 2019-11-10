@@ -8,13 +8,13 @@ Created on Sat Nov  9 18:40:21 2019
 
 import pandas as pd
 import re
-import sys
+import sys,os
 
 try:
     test,inFilename,outFilename=sys.argv
 
 except:
-    print("Please specify both input and output filenames (without extensions)!")
+    print("Please specify both input and output filenames(with extension)!")
     exit(1)
 
 myframe=pd.DataFrame()
@@ -22,7 +22,7 @@ myframe=pd.DataFrame()
 pattern=r'[ ]*CPU[ ]*(\d+)s[ ]*LPM[ ]*(\d+)s[ ]*DEEP LPM[ ]*'\
         +r'(\d+)s[ ]*Total time[ ]*(\d+)s[ ]*[\n]'\
         +r'*[ ]*Radio LISTEN[ ]*(\d+)s[ ]*TRANSMIT[ ]*(\d+)s[ ]*OFF[ ]*(\d+)s'
-file=open(inFilename+'.txt','r').read()
+file=open(inFilename,'r').read()
 stats=re.findall(pattern,file)
 
 #Energy consumption parameters
@@ -45,8 +45,7 @@ listen_datasheet_rate=24*pow(10,-3)
 Rx_datasheet_rate=27*pow(10,-3)
 Tx_datasheet_rate=34*pow(10,-3)
 
-
-
+counter=0
 for values in stats:
     #print(values)
     #CPU consumption
@@ -76,7 +75,7 @@ for values in stats:
                       energy_Rx_datasheet+energy_Tx_datasheet
     
     
-    data=[[values[0],values[1],values[2],values[3],values[4],values[5],\
+    data=[[counter,values[0],values[1],values[2],values[3],values[4],values[5],\
           energy_CPU_profile,energy_LPM_profile,energy_DLPM_profile,\
           energy_listen_profile,energy_Rx_profile,energy_Tx_profile,\
           energy_total_profile,\
@@ -84,7 +83,7 @@ for values in stats:
           energy_listen_datasheet,energy_Rx_datasheet,energy_Tx_datasheet,\
           energy_total_datasheet]]
     
-    frame=pd.DataFrame(data,columns=['CPU (in s)','LPM (in s)','DLPM (in s)',\
+    frame=pd.DataFrame(data,columns=['itr','CPU (in s)','LPM (in s)','DLPM (in s)',\
                                      'listen (in s)','Rx (in s)','Tx (in s)',\
                                      'CPU_Usage_profile (in J)','LPM_Usage_profile (in J)',\
                                      'DLPM_Usage_profile (in J)','Listen_usage_profile (in J)',\
@@ -96,7 +95,11 @@ for values in stats:
                                      'TotalUsage_datasheet (in J)'])
     
     myframe=myframe.append(frame)
-    
+    counter=counter+1
     
 #Writing to csv File
-export_to_csv=myframe.to_csv('stats/'+outFilename+'.csv',index=None,header=True)
+mdir=outFilename.rsplit('/',1)
+#print(mdir[0])
+if not os.path.isdir(mdir[0]):
+    os.makedirs(mdir[0]) 
+export_to_csv=myframe.to_csv(outFilename,index=None,header=True)
