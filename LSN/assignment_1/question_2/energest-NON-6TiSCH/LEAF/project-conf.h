@@ -35,10 +35,10 @@
 
 #endif /* PROJECT_CONF_H_ */
 
-//#define LOG_CONF_LEVEL_MAC                         LOG_LEVEL_DBG
-
 #define TSCH_CALLBACK_JOINING_NETWORK                   tsch_rpl_callback_joining_network_new
-#undef TSCH_SCHEDULE_CONF_WITH_6TISCH_MINIMAL          //undefining means using the "orchestra" scheduler
+//#define LOG_CONF_LEVEL_MAC                         LOG_LEVEL_DBG
+//#undef TSCH_SCHEDULE_CONF_WITH_6TISCH_MINIMAL          //undefining means using the "orchestra" scheduler
+//#define TSCH_CONF_WITH_SIXTOP                           1 //don't use 6top (part of 6TiSCH)
 #define QUEUEBUF_CONF_NUM				4
 #define NBR_TABLE_CONF_MAX_NEIGHBORS			4
 #define NETSTACK_MAX_ROUTE_ENTRIES			4

@@ -32,11 +32,12 @@
 
 #include "contiki.h"
 #include "sys/energest.h"
+#include "sys/stimer.h"
 #include "tsch.h"
 
 PROCESS(energest_example_process, "energest example process");
 AUTOSTART_PROCESSES(&energest_example_process);
-static bool start = false;
+static bool stop = false;
 
 /*---------------------------------------------------------------------------*/
 static inline unsigned long
@@ -48,8 +49,8 @@ to_seconds(uint64_t time)
 void
 tsch_rpl_callback_joining_network_new(void) 
 {
-    printf("\nSTART\n");
-    start = true;
+    printf("\nJOINED NETWORK\n");
+    stop = true;
 }
 
 
@@ -61,26 +62,28 @@ tsch_rpl_callback_joining_network_new(void)
 PROCESS_THREAD(energest_example_process, ev, data)
 {
   static struct etimer periodic_timer;
-  //static struct stimer second_timer;
-  //static bool once = true;
+  static struct stimer second_timer;
+  static unsigned long total_time = 0;
+  static unsigned long seconds = 0;
 
   PROCESS_BEGIN();
-  tsch_set_eb_period(CLOCK_SECOND * 1);
-  static int i = 1;
 
 
-
-
-  etimer_set(&periodic_timer, CLOCK_SECOND * 0.1);
+  etimer_set(&periodic_timer, CLOCK_SECOND * 1);
+  stimer_set(&second_timer, 600); // Start the timer.
+  printf("\nTimer started for 600 seconds\n");
   while(1) {
 
-
+    if(stimer_expired(&second_timer)) {
+      printf("\n10 minutes expired\n");
+      printf("\nStopping process\n");
+      break;
+    }
 
     PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
     etimer_reset(&periodic_timer);
-
+    seconds += 1;
     
-
 
     /*
      * Update all energest times. Should always be called before energest
@@ -88,33 +91,31 @@ PROCESS_THREAD(energest_example_process, ev, data)
      */
     energest_flush();
 
-    int neighbours = rpl_neighbor_count();
+    printf("\n CPU          %4lus LPM      %4lus DEEP LPM %4lus  Total time %lus\n",
+       to_seconds(energest_type_time(ENERGEST_TYPE_CPU)),
+       to_seconds(energest_type_time(ENERGEST_TYPE_LPM)),
+       to_seconds(energest_type_time(ENERGEST_TYPE_DEEP_LPM)),
+       to_seconds(ENERGEST_GET_TOTAL_TIME()));
+    printf(" Radio LISTEN %4lus TRANSMIT %4lus OFF      %4lus\n",
+       to_seconds(energest_type_time(ENERGEST_TYPE_LISTEN)),
+       to_seconds(energest_type_time(ENERGEST_TYPE_TRANSMIT)),
+       to_seconds(ENERGEST_GET_TOTAL_TIME()
+	      - energest_type_time(ENERGEST_TYPE_TRANSMIT)
+	      - energest_type_time(ENERGEST_TYPE_LISTEN)));
 
 
-
-    if (start) {
-        printf("\nCurrent EB PERIOD is: %d", i);
-        printf("\nMAX EB PERIOD is: %d", TSCH_MAX_EB_PERIOD);
+    if (stop) {
 	printf("\nEnergest:\n");
-	printf(" CPU          %4lus LPM      %4lus DEEP LPM %4lus  Total time %lus\n",
-	   to_seconds(energest_type_time(ENERGEST_TYPE_CPU)),
-	   to_seconds(energest_type_time(ENERGEST_TYPE_LPM)),
-	   to_seconds(energest_type_time(ENERGEST_TYPE_DEEP_LPM)),
-	   to_seconds(ENERGEST_GET_TOTAL_TIME()));
-	printf(" Radio LISTEN %4lus TRANSMIT %4lus OFF      %4lus\n",
-	   to_seconds(energest_type_time(ENERGEST_TYPE_LISTEN)),
-	   to_seconds(energest_type_time(ENERGEST_TYPE_TRANSMIT)),
-	   to_seconds(ENERGEST_GET_TOTAL_TIME()
-		      - energest_type_time(ENERGEST_TYPE_TRANSMIT)
-		      - energest_type_time(ENERGEST_TYPE_LISTEN)));
+        printf("\nTIME NEEDED TO JOIN: %ld", (seconds-total_time));
+
+        total_time = seconds;
+
     }
 
-    if (neighbours == 1) {
+    if (stop) {
 	printf("\nSTOP\n");
-        start = false;
-        i += 1;
+        stop = false;
         tsch_disassociate(); //break connection
-        tsch_set_eb_period(CLOCK_SECOND * 1 + i);
     }
 
 
