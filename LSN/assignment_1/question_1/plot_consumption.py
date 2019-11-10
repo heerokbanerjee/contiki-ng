@@ -20,6 +20,7 @@ except:
 fig=plt.gcf()    
 data=pd.read_csv(inFilename)
 curr_axis=plt.gca()
+
 data.plot(kind='line',x='itr',y='CPU_Usage_profile (in J)',ax=curr_axis)
 data.plot(kind='line',x='itr',y='LPM_Usage_profile (in J)',ax=curr_axis)
 data.plot(kind='line',x='itr',y='DLPM_Usage_profile (in J)',ax=curr_axis)
