@@ -58,6 +58,14 @@ listen_datasheet_rate=24*pow(10,-3)
 Rx_datasheet_rate=27*pow(10,-3)
 Tx_datasheet_rate=34*pow(10,-3)
 
+### For each iteration
+##
+## We Take value at current iteration- value at prev iteration.
+## This given the time utilized for consumption. Next, Using
+## device profiling/ datasheet emperical values, we compute
+## the energy consumption for that iteration.
+
+
 counter=1
 for values in stats:
     #print(values)
@@ -79,7 +87,8 @@ for values in stats:
     #Tx consumption
     energy_Tx_profile=Tx_profile_rate*float(int(values[5])-int(myframe['Tx (in s)'].values[counter-1]))*inp_volt
     energy_Tx_datasheet=Tx_datasheet_rate*float(values[5])*inp_volt
-    #total consumption
+    
+    #Computing total energy consumption
     energy_total_profile=energy_CPU_profile+energy_LPM_profile+ \
                         energy_DLPM_profile+energy_listen_profile+ \
                         energy_Rx_profile+energy_Tx_profile
@@ -87,7 +96,9 @@ for values in stats:
                       energy_DLPM_datasheet+energy_listen_datasheet+ \
                       energy_Rx_datasheet+energy_Tx_datasheet
     
-    
+        
+    ## Create new Dataframe and append at each step.
+    ## So that, in next iteration we can use the value.
     data=[[counter,values[0],values[1],values[2],values[3],values[4],values[5],\
           energy_CPU_profile,energy_LPM_profile,energy_DLPM_profile,\
           energy_listen_profile,energy_Rx_profile,energy_Tx_profile,\
@@ -102,6 +113,7 @@ for values in stats:
     counter=counter+1
 
 print(myframe)    
+
 #Writing to csv File
 mdir=outFilename.rsplit('/',1)
 #print(mdir[0])
