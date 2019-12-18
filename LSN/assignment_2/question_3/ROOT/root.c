@@ -34,6 +34,19 @@
 #include "sys/energest.h"
 #include "tsch.h"
 #include "tsch-types.h"
+#include "net/nullnet/nullnet.h"
+
+/* Log configuration */
+#include "sys/log.h"
+#define LOG_MODULE "App"
+#define LOG_LEVEL LOG_LEVEL_INFO
+
+/* Configuration */
+#define SEND_INTERVAL (1 * CLOCK_SECOND)
+
+static int recieved = 0;
+static long latencyStart[100];
+static long latencyStop[100];
 
 PROCESS(energest_example_process, "energest example process");
 AUTOSTART_PROCESSES(&energest_example_process);
@@ -43,7 +56,21 @@ to_seconds(uint64_t time)
 {
   return (unsigned long)(time / ENERGEST_SECOND);
 }
-
+/*---------------------------------------------------------------------------*/
+void input_callback(const void *data, uint16_t len,
+  const linkaddr_t *src, const linkaddr_t *dest)
+{
+  if(len == sizeof(unsigned)) {
+    unsigned count;
+    memcpy(&count, data, sizeof(count));
+    printf("Received %u from ", count);
+    printf("\n");
+    LOG_INFO_LLADDR(src);
+    LOG_INFO_("\n");
+    recieved++;
+    latencyStop[count] = clock_seconds();
+  }
+}
 
 
 /*---------------------------------------------------------------------------*/
@@ -53,69 +80,87 @@ to_seconds(uint64_t time)
  */
 PROCESS_THREAD(energest_example_process, ev, data)
 {
-  static struct etimer periodic_timer;
-//0012.4b00.1932.e169
-  //const linkaddr_t MAC_LEAF = {{ 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe3, 0x20 }};
-  const linkaddr_t MAC_LEAF = {{ 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe1, 0x69 }};
+	static struct etimer periodic_timer;
+	static struct etimer stay_timer;
+	etimer_set(&stay_timer, CLOCK_SECOND * 20);
+	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&stay_timer));
+	//0012.4b00.1932.e169
+	const linkaddr_t MAC_LEAF = {{ 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe3, 0x20 }};
+	//const linkaddr_t MAC_ROOT = {{ 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe1, 0x69 }};
 
-  static bool once = true;
-
-  PROCESS_BEGIN();
-  tsch_schedule_init();
-  tsch_queue_add_nbr(MAC_LEAF);
-  mac_callback_t sent;
-  void * ptr;
-    
-  struct tsch_packet *pp = tsch_queue_add_packet(MAC_LEAF, 8, sent, ptr);	
- 
+        static unsigned count = 0;
+        clock_init();
 
 
-  etimer_set(&periodic_timer, CLOCK_SECOND * 10);
-  while(1) {
+	PROCESS_BEGIN();	
+
+	/*
+	* Update all energest times. Should always be called before energest
+	* times are read.
+	*/
+	energest_flush();
+	printf("\n\n");
+
+	tsch_set_coordinator(1);
+	printf("I'm coordinator");
+
+	/* Initialize NullNet */
+	nullnet_buf = (uint8_t *)&count;
+	nullnet_len = sizeof(count);
+	nullnet_set_input_callback(input_callback);
+
+	if(!linkaddr_cmp(&MAC_LEAF, &linkaddr_node_addr)) {
+		etimer_set(&periodic_timer, SEND_INTERVAL);
+		while(1) {
+			PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
+
+			/*
+			     * Update all energest times. Should always be called before energest
+			     * times are read.
+			     */
+			    energest_flush();
+
+				printf("\n---------------------ENERGY-------------------------\n");
+			    printf("\n CPU          %4lus LPM      %4lus DEEP LPM %4lus  Total time %lus\n",
+			       to_seconds(energest_type_time(ENERGEST_TYPE_CPU)),
+			       to_seconds(energest_type_time(ENERGEST_TYPE_LPM)),
+			       to_seconds(energest_type_time(ENERGEST_TYPE_DEEP_LPM)),
+			       to_seconds(ENERGEST_GET_TOTAL_TIME()));
+			    printf(" Radio LISTEN %4lus TRANSMIT %4lus OFF      %4lus\n",
+			       to_seconds(energest_type_time(ENERGEST_TYPE_LISTEN)),
+			       to_seconds(energest_type_time(ENERGEST_TYPE_TRANSMIT)),
+			       to_seconds(ENERGEST_GET_TOTAL_TIME()
+				      - energest_type_time(ENERGEST_TYPE_TRANSMIT)
+				      - energest_type_time(ENERGEST_TYPE_LISTEN)));
+				printf("\n----------------------------------------------------\n");
 
 
+			LOG_INFO("Sending %u to ", count);
+			LOG_INFO_LLADDR(&MAC_LEAF);
+			LOG_INFO_("\n");
 
-    PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
-    etimer_reset(&periodic_timer);
+			NETSTACK_NETWORK.output(&MAC_LEAF);
+			count++;
+			latencyStart[count] = clock_seconds();
+			etimer_reset(&periodic_timer);
 
-
-
-    /*
-     * Update all energest times. Should always be called before energest
-     * times are read.
-     */
-    energest_flush();
-    printf("\n\n");
- 
-    if (once) {
-	struct tsch_slotframe *sf = tsch_schedule_get_slotframe_by_handle(0); //shared slotframe
-	if (sf == NULL){
-	printf("NO such slotframe found"); // so node is not yet set to root-node (coordinator)
-	} else {
-	printf("Handle: %d", sf->handle);
-	struct tsch_link *tl = tsch_schedule_add_link(sf, 0,LINK_TYPE_NORMAL, &MAC_LEAF, 1, 0);
-	if (tl == NULL){
-	    printf("NO such link found");
-	} else {
-	    printf("handel: %d", tl->handle);
-	    printf("LINK CREATED FOR 0012.4b00.1932.e169");
-	    once = false;
-            struct tsch_neighbor * tn = tsch_queue_get_time_source();	
-            tsch_queue_packet_sent(tn, pp, tl, MAC_TX_OK);
+			if (count == 100){
+				break;
+			}
+		}
 	}
 
-	}
-    }
-    
-   
+        printf("\n\n\nSend %d packets, recieved %d packets\n\n", count, recieved);
+	printf("latencies: \n");
+	// printing elements of an array
+	  for(int i = 0; i < 100; ++i) {
+	     long l = latencyStop[i] - latencyStart[i];
+	     printf("%ld\n", l);
+	  }
+	
+	printf("Represented in number of clicks: 1 Clock_second is 128 ticks");
+	printf("Clock_second: %d", CLOCK_SECOND);
 
-
-	printf("\nSCHEDULE:\n");
-	tsch_schedule_print();
-
-
-  }
-
-  PROCESS_END();
+  	PROCESS_END();
 }
 /*---------------------------------------------------------------------------*/
