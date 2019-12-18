@@ -60,19 +60,37 @@ Explanation:
 Once the root-node detects a node has joined the network, it will start printing energy-stats each 10 sec over a period of 10 min and shuts itself down.
 Once the leaf-node detects it has joined a network it will also print out energy-stats each 10 sec over a period of 10 min and then shut itself down.
 
-# Parsing Scripts
+# Parsing & Scripts
 
 The scripts for postprocessing the experimental data is written in Python 3.0. Some additional libraries used are :
 * pandas (https://pandas.pydata.org/)
 To install pandas, use the following command : pip3 install pandas
 
-There are two scripts that is essentially required to process and visualize the data. The syntaxt of the scripts are:
-* energy_consumption.py: python3 energy_consumption.py directory/INPUTFILENAME.txt stats/OUTPUTFILENAME.csv
-* plot_consumption.py: python3 plot_consumption.py stats/INPUTFILENAME.csv plots/OUTPUTFILENAME.png
+There are two scripts that is essentially required to process and visualize the data. The basic  syntaxt of the scripts are:
+* energy_consumption.py: **python3 energy_consumption.py directory/INPUTFILENAME.txt stats/OUTPUTFILENAME.csv**
+* plot_consumption.py: **python3 plot_consumption.py stats/INPUTFILENAME.csv plots/OUTPUTFILENAME.png**
 
 
 The parsing script essentially reads the energest log files and uses python 're' module to match some basic regular expressions. The two regex used are:
 * To iterate through the energest dump file and extract the primary statistics, we have used this patters :'[ ]*CPU[ ]*(\d+)s[ ]*LPM[ ]*(\d+)s[ ]*DEEP LPM[ ]*(\d+)s[ ]*Total time[ ]*(\d+)s[ ]*[\n]*[ ]*Radio LISTEN[ ]*(\d+)s[ ]*TRANSMIT[ ]*(\d+)s[ ]*OFF[ ]*(\d+)s'
+
+
+The chronology of commands to reproduce the statistics and plots is given below:
+
+For computing the energy statistics:
+
+```
+python3 energy_consumption.py energest-6Tisch/LEAF/leaf.txt stats/6TISCH/leaf.csv 
+python3 energy_consumption.py energest-6Tisch/LEAF/root.txt stats/6TISCH/root.csv 
+
+```
+
+For visualizing and generating the plot:
+
+```
+python3 plot_consumption.py stats/6TISCH/leaf.csv plots/6TISCH/leaf.png 
+python3 plot_consumption.py stats/6TISCH/root.csv plots/6TISCH/root.png 
+```
 
 
 
