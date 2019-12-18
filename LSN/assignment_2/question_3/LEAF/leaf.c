@@ -89,6 +89,7 @@ PROCESS_THREAD(energest_example_process, ev, data)
         const linkaddr_t MAC_ROOT = {{ 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe1, 0x69 }};
   //static struct stimer second_timer;
 
+        NETSTACK_RADIO.set_value(RADIO_PARAM_TXPOWER, 7);
 
   	PROCESS_BEGIN();
 
