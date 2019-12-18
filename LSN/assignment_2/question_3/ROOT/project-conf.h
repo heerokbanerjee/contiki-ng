@@ -38,6 +38,7 @@
 //#define LOG_CONF_LEVEL_MAC                         LOG_LEVEL_DBG
 //#define TSCH_LOG_CONF_PER_SLOT                     1
 #define TSCH_CONF_JOIN_HOPPING_SEQUENCE                 TSCH_HOPPING_SEQUENCE_1_1
+#define TX_POWER                          17
 
 //#undef TSCH_SCHEDULE_CONF_WITH_6TISCH_MINIMAL          
 //#define TSCH_CONF_WITH_SIXTOP                           1 //don't use 6top (part of 6TiSCH)

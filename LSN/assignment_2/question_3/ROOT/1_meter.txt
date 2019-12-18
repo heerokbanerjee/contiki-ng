@@ -1,0 +1,1155 @@
+rlwrap ../../../../tools/serial-io/serialdump -b115200 /dev/ttyUSB0
+[INFO: Main      ] Starting Contiki-NG-release/v4.4-39-gc1370e3-dirty
+[INFO: Main      ] - Routing: nullrouting
+[INFO: Main      ] - Net: nullnet
+[INFO: Main      ] - MAC: TSCH
+[INFO: Main      ] - 802.15.4 PANID: 0xabcd
+[INFO: Main      ] - 802.15.4 TSCH default hopping sequence length: 4
+[INFO: Main      ] Node ID: 57705
+[INFO: Main      ] Link-layer address: 0012.4b00.1932.e169
+[INFO: Zoul      ] Zolertia Firefly platform
+
+
+I'm coordinator
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+waiting
+
+---------------------ENERGY-------------------------
+
+ CPU             0s LPM        19s DEEP LPM    0s  Total time 20s
+ Radio LISTEN    1s TRANSMIT    0s OFF        19s
+
+----------------------------------------------------
+[INFO: App       ] Sending 0 to 0012.4b00.1932.e320
+Received 0 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             0s LPM        20s DEEP LPM    0s  Total time 21s
+ Radio LISTEN    1s TRANSMIT    0s OFF        20s
+
+----------------------------------------------------
+[INFO: App       ] Sending 1 to 0012.4b00.1932.e320
+Received 1 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             0s LPM        21s DEEP LPM    0s  Total time 22s
+ Radio LISTEN    1s TRANSMIT    0s OFF        21s
+
+----------------------------------------------------
+[INFO: App       ] Sending 2 to 0012.4b00.1932.e320
+Received 2 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             0s LPM        22s DEEP LPM    0s  Total time 23s
+ Radio LISTEN    1s TRANSMIT    0s OFF        22s
+
+----------------------------------------------------
+[INFO: App       ] Sending 3 to 0012.4b00.1932.e320
+Received 3 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             0s LPM        23s DEEP LPM    0s  Total time 24s
+ Radio LISTEN    1s TRANSMIT    0s OFF        23s
+
+----------------------------------------------------
+[INFO: App       ] Sending 4 to 0012.4b00.1932.e320
+Received 4 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             0s LPM        24s DEEP LPM    0s  Total time 25s
+ Radio LISTEN    1s TRANSMIT    0s OFF        24s
+
+----------------------------------------------------
+[INFO: App       ] Sending 5 to 0012.4b00.1932.e320
+Received 5 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             0s LPM        25s DEEP LPM    0s  Total time 26s
+ Radio LISTEN    1s TRANSMIT    0s OFF        25s
+
+----------------------------------------------------
+[INFO: App       ] Sending 6 to 0012.4b00.1932.e320
+Received 6 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             0s LPM        26s DEEP LPM    0s  Total time 27s
+ Radio LISTEN    1s TRANSMIT    0s OFF        26s
+
+----------------------------------------------------
+[INFO: App       ] Sending 7 to 0012.4b00.1932.e320
+Received 7 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             0s LPM        27s DEEP LPM    0s  Total time 28s
+ Radio LISTEN    1s TRANSMIT    0s OFF        27s
+
+----------------------------------------------------
+[INFO: App       ] Sending 8 to 0012.4b00.1932.e320
+Received 8 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             0s LPM        28s DEEP LPM    0s  Total time 29s
+ Radio LISTEN    1s TRANSMIT    0s OFF        28s
+
+----------------------------------------------------
+[INFO: App       ] Sending 9 to 0012.4b00.1932.e320
+Received 9 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             0s LPM        29s DEEP LPM    0s  Total time 30s
+ Radio LISTEN    1s TRANSMIT    0s OFF        29s
+
+----------------------------------------------------
+[INFO: App       ] Sending 10 to 0012.4b00.1932.e320
+Received 10 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        30s DEEP LPM    0s  Total time 31s
+ Radio LISTEN    1s TRANSMIT    0s OFF        30s
+
+----------------------------------------------------
+[INFO: App       ] Sending 11 to 0012.4b00.1932.e320
+Received 11 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        31s DEEP LPM    0s  Total time 32s
+ Radio LISTEN    1s TRANSMIT    0s OFF        31s
+
+----------------------------------------------------
+[INFO: App       ] Sending 12 to 0012.4b00.1932.e320
+Received 12 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        32s DEEP LPM    0s  Total time 33s
+ Radio LISTEN    1s TRANSMIT    0s OFF        31s
+
+----------------------------------------------------
+[INFO: App       ] Sending 13 to 0012.4b00.1932.e320
+Received 13 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        33s DEEP LPM    0s  Total time 34s
+ Radio LISTEN    1s TRANSMIT    0s OFF        32s
+
+----------------------------------------------------
+[INFO: App       ] Sending 14 to 0012.4b00.1932.e320
+Received 14 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        34s DEEP LPM    0s  Total time 35s
+ Radio LISTEN    1s TRANSMIT    0s OFF        33s
+
+----------------------------------------------------
+[INFO: App       ] Sending 15 to 0012.4b00.1932.e320
+Received 15 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        35s DEEP LPM    0s  Total time 36s
+ Radio LISTEN    1s TRANSMIT    0s OFF        34s
+
+----------------------------------------------------
+[INFO: App       ] Sending 16 to 0012.4b00.1932.e320
+Received 16 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        36s DEEP LPM    0s  Total time 37s
+ Radio LISTEN    1s TRANSMIT    0s OFF        35s
+
+----------------------------------------------------
+[INFO: App       ] Sending 17 to 0012.4b00.1932.e320
+Received 17 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        37s DEEP LPM    0s  Total time 38s
+ Radio LISTEN    1s TRANSMIT    0s OFF        36s
+
+----------------------------------------------------
+[INFO: App       ] Sending 18 to 0012.4b00.1932.e320
+Received 18 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        38s DEEP LPM    0s  Total time 39s
+ Radio LISTEN    1s TRANSMIT    0s OFF        37s
+
+----------------------------------------------------
+[INFO: App       ] Sending 19 to 0012.4b00.1932.e320
+Received 19 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        39s DEEP LPM    0s  Total time 40s
+ Radio LISTEN    1s TRANSMIT    0s OFF        38s
+
+----------------------------------------------------
+[INFO: App       ] Sending 20 to 0012.4b00.1932.e320
+Received 20 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        40s DEEP LPM    0s  Total time 41s
+ Radio LISTEN    1s TRANSMIT    0s OFF        39s
+
+----------------------------------------------------
+[INFO: App       ] Sending 21 to 0012.4b00.1932.e320
+Received 21 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        41s DEEP LPM    0s  Total time 42s
+ Radio LISTEN    1s TRANSMIT    0s OFF        40s
+
+----------------------------------------------------
+[INFO: App       ] Sending 22 to 0012.4b00.1932.e320
+Received 22 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        42s DEEP LPM    0s  Total time 43s
+ Radio LISTEN    1s TRANSMIT    0s OFF        41s
+
+----------------------------------------------------
+[INFO: App       ] Sending 23 to 0012.4b00.1932.e320
+Received 23 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        43s DEEP LPM    0s  Total time 44s
+ Radio LISTEN    1s TRANSMIT    0s OFF        42s
+
+----------------------------------------------------
+[INFO: App       ] Sending 24 to 0012.4b00.1932.e320
+Received 24 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        44s DEEP LPM    0s  Total time 45s
+ Radio LISTEN    1s TRANSMIT    0s OFF        43s
+
+----------------------------------------------------
+[INFO: App       ] Sending 25 to 0012.4b00.1932.e320
+Received 25 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        45s DEEP LPM    0s  Total time 46s
+ Radio LISTEN    1s TRANSMIT    0s OFF        44s
+
+----------------------------------------------------
+[INFO: App       ] Sending 26 to 0012.4b00.1932.e320
+Received 26 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        46s DEEP LPM    0s  Total time 47s
+ Radio LISTEN    2s TRANSMIT    0s OFF        45s
+
+----------------------------------------------------
+[INFO: App       ] Sending 27 to 0012.4b00.1932.e320
+Received 27 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        47s DEEP LPM    0s  Total time 48s
+ Radio LISTEN    2s TRANSMIT    0s OFF        46s
+
+----------------------------------------------------
+[INFO: App       ] Sending 28 to 0012.4b00.1932.e320
+Received 28 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        47s DEEP LPM    0s  Total time 49s
+ Radio LISTEN    2s TRANSMIT    0s OFF        47s
+
+----------------------------------------------------
+[INFO: App       ] Sending 29 to 0012.4b00.1932.e320
+Received 29 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        48s DEEP LPM    0s  Total time 50s
+ Radio LISTEN    2s TRANSMIT    0s OFF        48s
+
+----------------------------------------------------
+[INFO: App       ] Sending 30 to 0012.4b00.1932.e320
+Received 30 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        49s DEEP LPM    0s  Total time 51s
+ Radio LISTEN    2s TRANSMIT    0s OFF        49s
+
+----------------------------------------------------
+[INFO: App       ] Sending 31 to 0012.4b00.1932.e320
+Received 31 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        50s DEEP LPM    0s  Total time 52s
+ Radio LISTEN    2s TRANSMIT    0s OFF        50s
+
+----------------------------------------------------
+[INFO: App       ] Sending 32 to 0012.4b00.1932.e320
+Received 32 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        51s DEEP LPM    0s  Total time 53s
+ Radio LISTEN    2s TRANSMIT    0s OFF        51s
+
+----------------------------------------------------
+[INFO: App       ] Sending 33 to 0012.4b00.1932.e320
+Received 33 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        52s DEEP LPM    0s  Total time 54s
+ Radio LISTEN    2s TRANSMIT    0s OFF        52s
+
+----------------------------------------------------
+[INFO: App       ] Sending 34 to 0012.4b00.1932.e320
+Received 34 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        53s DEEP LPM    0s  Total time 55s
+ Radio LISTEN    2s TRANSMIT    0s OFF        53s
+
+----------------------------------------------------
+[INFO: App       ] Sending 35 to 0012.4b00.1932.e320
+Received 35 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        54s DEEP LPM    0s  Total time 56s
+ Radio LISTEN    2s TRANSMIT    0s OFF        54s
+
+----------------------------------------------------
+[INFO: App       ] Sending 36 to 0012.4b00.1932.e320
+Received 36 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        55s DEEP LPM    0s  Total time 57s
+ Radio LISTEN    2s TRANSMIT    0s OFF        55s
+
+----------------------------------------------------
+[INFO: App       ] Sending 37 to 0012.4b00.1932.e320
+Received 37 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        56s DEEP LPM    0s  Total time 58s
+ Radio LISTEN    2s TRANSMIT    0s OFF        56s
+
+----------------------------------------------------
+[INFO: App       ] Sending 38 to 0012.4b00.1932.e320
+Received 38 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        57s DEEP LPM    0s  Total time 59s
+ Radio LISTEN    2s TRANSMIT    0s OFF        57s
+
+----------------------------------------------------
+[INFO: App       ] Sending 39 to 0012.4b00.1932.e320
+Received 39 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        58s DEEP LPM    0s  Total time 60s
+ Radio LISTEN    2s TRANSMIT    0s OFF        57s
+
+----------------------------------------------------
+[INFO: App       ] Sending 40 to 0012.4b00.1932.e320
+Received 40 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        59s DEEP LPM    0s  Total time 61s
+ Radio LISTEN    2s TRANSMIT    0s OFF        58s
+
+----------------------------------------------------
+[INFO: App       ] Sending 41 to 0012.4b00.1932.e320
+Received 41 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        60s DEEP LPM    0s  Total time 62s
+ Radio LISTEN    2s TRANSMIT    0s OFF        59s
+
+----------------------------------------------------
+[INFO: App       ] Sending 42 to 0012.4b00.1932.e320
+Received 42 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        61s DEEP LPM    0s  Total time 63s
+ Radio LISTEN    2s TRANSMIT    0s OFF        60s
+
+----------------------------------------------------
+[INFO: App       ] Sending 43 to 0012.4b00.1932.e320
+Received 43 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        62s DEEP LPM    0s  Total time 64s
+ Radio LISTEN    2s TRANSMIT    0s OFF        61s
+
+----------------------------------------------------
+[INFO: App       ] Sending 44 to 0012.4b00.1932.e320
+Received 44 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        63s DEEP LPM    0s  Total time 65s
+ Radio LISTEN    2s TRANSMIT    0s OFF        62s
+
+----------------------------------------------------
+[INFO: App       ] Sending 45 to 0012.4b00.1932.e320
+Received 45 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        64s DEEP LPM    0s  Total time 66s
+ Radio LISTEN    2s TRANSMIT    0s OFF        63s
+
+----------------------------------------------------
+[INFO: App       ] Sending 46 to 0012.4b00.1932.e320
+Received 46 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        65s DEEP LPM    0s  Total time 67s
+ Radio LISTEN    2s TRANSMIT    0s OFF        64s
+
+----------------------------------------------------
+[INFO: App       ] Sending 47 to 0012.4b00.1932.e320
+Received 47 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        66s DEEP LPM    0s  Total time 68s
+ Radio LISTEN    2s TRANSMIT    0s OFF        65s
+
+----------------------------------------------------
+[INFO: App       ] Sending 48 to 0012.4b00.1932.e320
+Received 48 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        67s DEEP LPM    0s  Total time 69s
+ Radio LISTEN    2s TRANSMIT    0s OFF        66s
+
+----------------------------------------------------
+[INFO: App       ] Sending 49 to 0012.4b00.1932.e320
+Received 49 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        68s DEEP LPM    0s  Total time 70s
+ Radio LISTEN    2s TRANSMIT    0s OFF        67s
+
+----------------------------------------------------
+[INFO: App       ] Sending 50 to 0012.4b00.1932.e320
+Received 50 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        69s DEEP LPM    0s  Total time 71s
+ Radio LISTEN    2s TRANSMIT    0s OFF        68s
+
+----------------------------------------------------
+[INFO: App       ] Sending 51 to 0012.4b00.1932.e320
+Received 51 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        70s DEEP LPM    0s  Total time 72s
+ Radio LISTEN    2s TRANSMIT    0s OFF        69s
+
+----------------------------------------------------
+[INFO: App       ] Sending 52 to 0012.4b00.1932.e320
+Received 52 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        71s DEEP LPM    0s  Total time 73s
+ Radio LISTEN    2s TRANSMIT    0s OFF        70s
+
+----------------------------------------------------
+[INFO: App       ] Sending 53 to 0012.4b00.1932.e320
+Received 53 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        72s DEEP LPM    0s  Total time 74s
+ Radio LISTEN    2s TRANSMIT    0s OFF        71s
+
+----------------------------------------------------
+[INFO: App       ] Sending 54 to 0012.4b00.1932.e320
+Received 54 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        73s DEEP LPM    0s  Total time 75s
+ Radio LISTEN    3s TRANSMIT    0s OFF        72s
+
+----------------------------------------------------
+[INFO: App       ] Sending 55 to 0012.4b00.1932.e320
+Received 55 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        74s DEEP LPM    0s  Total time 76s
+ Radio LISTEN    3s TRANSMIT    0s OFF        73s
+
+----------------------------------------------------
+[INFO: App       ] Sending 56 to 0012.4b00.1932.e320
+Received 56 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        75s DEEP LPM    0s  Total time 77s
+ Radio LISTEN    3s TRANSMIT    0s OFF        74s
+
+----------------------------------------------------
+[INFO: App       ] Sending 57 to 0012.4b00.1932.e320
+Received 57 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        76s DEEP LPM    0s  Total time 78s
+ Radio LISTEN    3s TRANSMIT    0s OFF        75s
+
+----------------------------------------------------
+[INFO: App       ] Sending 58 to 0012.4b00.1932.e320
+Received 58 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        77s DEEP LPM    0s  Total time 79s
+ Radio LISTEN    3s TRANSMIT    0s OFF        76s
+
+----------------------------------------------------
+[INFO: App       ] Sending 59 to 0012.4b00.1932.e320
+Received 59 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        77s DEEP LPM    0s  Total time 80s
+ Radio LISTEN    3s TRANSMIT    0s OFF        77s
+
+----------------------------------------------------
+[INFO: App       ] Sending 60 to 0012.4b00.1932.e320
+Received 60 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        78s DEEP LPM    0s  Total time 81s
+ Radio LISTEN    3s TRANSMIT    0s OFF        78s
+
+----------------------------------------------------
+[INFO: App       ] Sending 61 to 0012.4b00.1932.e320
+Received 61 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        79s DEEP LPM    0s  Total time 82s
+ Radio LISTEN    3s TRANSMIT    0s OFF        79s
+
+----------------------------------------------------
+[INFO: App       ] Sending 62 to 0012.4b00.1932.e320
+Received 62 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        80s DEEP LPM    0s  Total time 83s
+ Radio LISTEN    3s TRANSMIT    0s OFF        80s
+
+----------------------------------------------------
+[INFO: App       ] Sending 63 to 0012.4b00.1932.e320
+Received 63 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        81s DEEP LPM    0s  Total time 84s
+ Radio LISTEN    3s TRANSMIT    0s OFF        81s
+
+----------------------------------------------------
+[INFO: App       ] Sending 64 to 0012.4b00.1932.e320
+Received 64 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        82s DEEP LPM    0s  Total time 85s
+ Radio LISTEN    3s TRANSMIT    0s OFF        82s
+
+----------------------------------------------------
+[INFO: App       ] Sending 65 to 0012.4b00.1932.e320
+Received 65 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        83s DEEP LPM    0s  Total time 86s
+ Radio LISTEN    3s TRANSMIT    0s OFF        82s
+
+----------------------------------------------------
+[INFO: App       ] Sending 66 to 0012.4b00.1932.e320
+Received 66 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        84s DEEP LPM    0s  Total time 87s
+ Radio LISTEN    3s TRANSMIT    0s OFF        83s
+
+----------------------------------------------------
+[INFO: App       ] Sending 67 to 0012.4b00.1932.e320
+Received 67 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        85s DEEP LPM    0s  Total time 88s
+ Radio LISTEN    3s TRANSMIT    0s OFF        84s
+
+----------------------------------------------------
+[INFO: App       ] Sending 68 to 0012.4b00.1932.e320
+Received 68 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        86s DEEP LPM    0s  Total time 89s
+ Radio LISTEN    3s TRANSMIT    0s OFF        85s
+
+----------------------------------------------------
+[INFO: App       ] Sending 69 to 0012.4b00.1932.e320
+Received 69 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        87s DEEP LPM    0s  Total time 90s
+ Radio LISTEN    3s TRANSMIT    0s OFF        86s
+
+----------------------------------------------------
+[INFO: App       ] Sending 70 to 0012.4b00.1932.e320
+Received 70 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        88s DEEP LPM    0s  Total time 91s
+ Radio LISTEN    3s TRANSMIT    0s OFF        87s
+
+----------------------------------------------------
+[INFO: App       ] Sending 71 to 0012.4b00.1932.e320
+Received 71 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        89s DEEP LPM    0s  Total time 92s
+ Radio LISTEN    3s TRANSMIT    0s OFF        88s
+
+----------------------------------------------------
+[INFO: App       ] Sending 72 to 0012.4b00.1932.e320
+Received 72 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        90s DEEP LPM    0s  Total time 93s
+ Radio LISTEN    3s TRANSMIT    0s OFF        89s
+
+----------------------------------------------------
+[INFO: App       ] Sending 73 to 0012.4b00.1932.e320
+Received 73 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        91s DEEP LPM    0s  Total time 94s
+ Radio LISTEN    3s TRANSMIT    0s OFF        90s
+
+----------------------------------------------------
+[INFO: App       ] Sending 74 to 0012.4b00.1932.e320
+Received 74 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        92s DEEP LPM    0s  Total time 95s
+ Radio LISTEN    3s TRANSMIT    0s OFF        91s
+
+----------------------------------------------------
+[INFO: App       ] Sending 75 to 0012.4b00.1932.e320
+Received 75 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        93s DEEP LPM    0s  Total time 96s
+ Radio LISTEN    3s TRANSMIT    0s OFF        92s
+
+----------------------------------------------------
+[INFO: App       ] Sending 76 to 0012.4b00.1932.e320
+Received 76 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        94s DEEP LPM    0s  Total time 97s
+ Radio LISTEN    3s TRANSMIT    0s OFF        93s
+
+----------------------------------------------------
+[INFO: App       ] Sending 77 to 0012.4b00.1932.e320
+Received 77 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        95s DEEP LPM    0s  Total time 98s
+ Radio LISTEN    3s TRANSMIT    0s OFF        94s
+
+----------------------------------------------------
+[INFO: App       ] Sending 78 to 0012.4b00.1932.e320
+Received 78 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        96s DEEP LPM    0s  Total time 99s
+ Radio LISTEN    3s TRANSMIT    0s OFF        95s
+
+----------------------------------------------------
+[INFO: App       ] Sending 79 to 0012.4b00.1932.e320
+Received 79 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        97s DEEP LPM    0s  Total time 100s
+ Radio LISTEN    3s TRANSMIT    0s OFF        96s
+
+----------------------------------------------------
+[INFO: App       ] Sending 80 to 0012.4b00.1932.e320
+Received 80 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        98s DEEP LPM    0s  Total time 101s
+ Radio LISTEN    3s TRANSMIT    0s OFF        97s
+
+----------------------------------------------------
+[INFO: App       ] Sending 81 to 0012.4b00.1932.e320
+Received 81 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        99s DEEP LPM    0s  Total time 102s
+ Radio LISTEN    3s TRANSMIT    0s OFF        98s
+
+----------------------------------------------------
+[INFO: App       ] Sending 82 to 0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       100s DEEP LPM    0s  Total time 103s
+ Radio LISTEN    3s TRANSMIT    0s OFF        99s
+
+----------------------------------------------------
+[INFO: App       ] Sending 83 to 0012.4b00.1932.e320
+Received 82 from 
+0012.4b00.1932.e320
+Received 83 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       101s DEEP LPM    0s  Total time 104s
+ Radio LISTEN    4s TRANSMIT    0s OFF       100s
+
+----------------------------------------------------
+[INFO: App       ] Sending 84 to 0012.4b00.1932.e320
+Received 84 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       102s DEEP LPM    0s  Total time 105s
+ Radio LISTEN    4s TRANSMIT    0s OFF       101s
+
+----------------------------------------------------
+[INFO: App       ] Sending 85 to 0012.4b00.1932.e320
+Received 85 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       103s DEEP LPM    0s  Total time 106s
+ Radio LISTEN    4s TRANSMIT    0s OFF       102s
+
+----------------------------------------------------
+[INFO: App       ] Sending 86 to 0012.4b00.1932.e320
+Received 86 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       104s DEEP LPM    0s  Total time 107s
+ Radio LISTEN    4s TRANSMIT    0s OFF       103s
+
+----------------------------------------------------
+[INFO: App       ] Sending 87 to 0012.4b00.1932.e320
+Received 87 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       105s DEEP LPM    0s  Total time 108s
+ Radio LISTEN    4s TRANSMIT    0s OFF       104s
+
+----------------------------------------------------
+[INFO: App       ] Sending 88 to 0012.4b00.1932.e320
+Received 88 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       106s DEEP LPM    0s  Total time 109s
+ Radio LISTEN    4s TRANSMIT    0s OFF       105s
+
+----------------------------------------------------
+[INFO: App       ] Sending 89 to 0012.4b00.1932.e320
+Received 89 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       107s DEEP LPM    0s  Total time 110s
+ Radio LISTEN    4s TRANSMIT    0s OFF       106s
+
+----------------------------------------------------
+[INFO: App       ] Sending 90 to 0012.4b00.1932.e320
+Received 90 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       108s DEEP LPM    0s  Total time 111s
+ Radio LISTEN    4s TRANSMIT    0s OFF       107s
+
+----------------------------------------------------
+[INFO: App       ] Sending 91 to 0012.4b00.1932.e320
+Received 91 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       108s DEEP LPM    0s  Total time 112s
+ Radio LISTEN    4s TRANSMIT    0s OFF       108s
+
+----------------------------------------------------
+[INFO: App       ] Sending 92 to 0012.4b00.1932.e320
+Received 92 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       109s DEEP LPM    0s  Total time 113s
+ Radio LISTEN    4s TRANSMIT    0s OFF       108s
+
+----------------------------------------------------
+[INFO: App       ] Sending 93 to 0012.4b00.1932.e320
+Received 93 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       110s DEEP LPM    0s  Total time 114s
+ Radio LISTEN    4s TRANSMIT    0s OFF       109s
+
+----------------------------------------------------
+[INFO: App       ] Sending 94 to 0012.4b00.1932.e320
+Received 94 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       111s DEEP LPM    0s  Total time 115s
+ Radio LISTEN    4s TRANSMIT    0s OFF       110s
+
+----------------------------------------------------
+[INFO: App       ] Sending 95 to 0012.4b00.1932.e320
+Received 95 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       112s DEEP LPM    0s  Total time 116s
+ Radio LISTEN    4s TRANSMIT    0s OFF       111s
+
+----------------------------------------------------
+[INFO: App       ] Sending 96 to 0012.4b00.1932.e320
+Received 96 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       113s DEEP LPM    0s  Total time 117s
+ Radio LISTEN    4s TRANSMIT    0s OFF       112s
+
+----------------------------------------------------
+[INFO: App       ] Sending 97 to 0012.4b00.1932.e320
+Received 97 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       114s DEEP LPM    0s  Total time 118s
+ Radio LISTEN    4s TRANSMIT    0s OFF       113s
+
+----------------------------------------------------
+[INFO: App       ] Sending 98 to 0012.4b00.1932.e320
+Received 98 from 
+0012.4b00.1932.e320
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       115s DEEP LPM    0s  Total time 119s
+ Radio LISTEN    4s TRANSMIT    0s OFF       114s
+
+----------------------------------------------------
+[INFO: App       ] Sending 99 to 0012.4b00.1932.e320
+
+
+
+Send 100 packets, recieved 99 packets
+
+latencies: 
+21
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+2
+-118
+Represented in number of clicks: 1 Clock_second is 128 ticksClock_second: 128I'm NOT coordinator anymore

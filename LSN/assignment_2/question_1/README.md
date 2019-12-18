@@ -60,3 +60,19 @@ Explanation:
 Once the root-node detects a node has joined the network, it will start printing energy-stats each 10 sec over a period of 10 min and shuts itself down.
 Once the leaf-node detects it has joined a network it will also print out energy-stats each 10 sec over a period of 10 min and then shut itself down.
 
+# Parsing Scripts
+
+The scripts for postprocessing the experimental data is written in Python 3.0. Some additional libraries used are :
+* pandas (https://pandas.pydata.org/)
+To install pandas, use the following command : pip3 install pandas
+
+There are two scripts that is essentially required to process and visualize the data. The syntaxt of the scripts are:
+* energy_consumption.py: python3 energy_consumption.py directory/INPUTFILENAME.txt stats/OUTPUTFILENAME.csv
+* plot_consumption.py: python3 plot_consumption.py stats/INPUTFILENAME.csv plots/OUTPUTFILENAME.png
+
+
+The parsing script essentially reads the energest log files and uses python 're' module to match some basic regular expressions. The two regex used are:
+* To iterate through the energest dump file and extract the primary statistics, we have used this patters :'[ ]*CPU[ ]*(\d+)s[ ]*LPM[ ]*(\d+)s[ ]*DEEP LPM[ ]*(\d+)s[ ]*Total time[ ]*(\d+)s[ ]*[\n]*[ ]*Radio LISTEN[ ]*(\d+)s[ ]*TRANSMIT[ ]*(\d+)s[ ]*OFF[ ]*(\d+)s'
+
+
+
