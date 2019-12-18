@@ -35,6 +35,9 @@
 #include "tsch.h"
 #include "tsch-types.h"
 #include "net/nullnet/nullnet.h"
+#include "radio.h"
+#include "dev/cc2420/cc2420.h"
+#include "net/netstack.h"
 
 /* Log configuration */
 #include "sys/log.h"
@@ -81,9 +84,9 @@ void input_callback(const void *data, uint16_t len,
 PROCESS_THREAD(energest_example_process, ev, data)
 {
 	static struct etimer periodic_timer;
-	static struct etimer stay_timer;
-	etimer_set(&stay_timer, CLOCK_SECOND * 20);
-	PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&stay_timer));
+	//static struct etimer stay_timer;
+
+
 	//0012.4b00.1932.e169
 	const linkaddr_t MAC_LEAF = {{ 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe3, 0x20 }};
 	//const linkaddr_t MAC_ROOT = {{ 0x00, 0x12, 0x4b, 0x00, 0x19, 0x32, 0xe1, 0x69 }};
@@ -91,18 +94,22 @@ PROCESS_THREAD(energest_example_process, ev, data)
         static unsigned count = 0;
         clock_init();
 
+	//increase tx power
+	//RADIO_PARAM_TXPOWER = 31;
+	int iets = NETSTACK_RADIO.set_value(RADIO_PARAM_TXPOWER, 7);
+	printf("return: %d", iets);
+	printf("TXPOWER: %d", RADIO_PARAM_TXPOWER);
 
 	PROCESS_BEGIN();	
 
-	/*
-	* Update all energest times. Should always be called before energest
-	* times are read.
-	*/
-	energest_flush();
-	printf("\n\n");
+	//etimer_set(&stay_timer, CLOCK_SECOND*20);
 
-	tsch_set_coordinator(1);
+	printf("\n\n");
+	static int seconds = 0;
+
+        tsch_set_coordinator(1);
 	printf("I'm coordinator");
+	
 
 	/* Initialize NullNet */
 	nullnet_buf = (uint8_t *)&count;
@@ -112,8 +119,16 @@ PROCESS_THREAD(energest_example_process, ev, data)
 	if(!linkaddr_cmp(&MAC_LEAF, &linkaddr_node_addr)) {
 		etimer_set(&periodic_timer, SEND_INTERVAL);
 		while(1) {
+			//PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&stay_timer));
 			PROCESS_WAIT_EVENT_UNTIL(etimer_expired(&periodic_timer));
+			seconds += 1;
+			if (seconds < 20){
+				printf("\nwaiting\n");
+			        etimer_reset(&periodic_timer);
+				continue;
+			}
 
+			
 			/*
 			     * Update all energest times. Should always be called before energest
 			     * times are read.
@@ -160,6 +175,9 @@ PROCESS_THREAD(energest_example_process, ev, data)
 	
 	printf("Represented in number of clicks: 1 Clock_second is 128 ticks");
 	printf("Clock_second: %d", CLOCK_SECOND);
+
+	tsch_set_coordinator(0);
+	printf("I'm NOT coordinator anymore");
 
   	PROCESS_END();
 }
