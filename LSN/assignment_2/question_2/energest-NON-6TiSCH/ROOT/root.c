@@ -102,9 +102,9 @@ PROCESS_THREAD(energest_example_process, ev, data)
 
     if (once) {
         once = false;
-        //printf("\nCurrent EB PERIOD is: %d", TSCH_EB_PERIOD);
-        //printf("\nMAX EB PERIOD is: %d", TSCH_MAX_EB_PERIOD);
-	printf("\nCurrent JOINING HOPPING SEQUENCE is: { 16, 17, 23, 18, 26, 15, 25, 22, 19, 11, 12, 13, 24, 14, 20, 21 }");
+        printf("\nCurrent EB PERIOD is: %d", TSCH_EB_PERIOD);
+        printf("\nMAX EB PERIOD is: %d", TSCH_MAX_EB_PERIOD);
+	//printf("\nCurrent JOINING HOPPING SEQUENCE is: { 16, 17, 23, 18, 26, 15, 25, 22, 19, 11, 12, 13, 24, 14, 20, 21 }");
         printf("\nSetting myself as coordinator!");
 	tsch_set_coordinator(1);
     }

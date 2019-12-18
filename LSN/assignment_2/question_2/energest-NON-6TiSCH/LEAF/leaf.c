@@ -71,12 +71,12 @@ PROCESS_THREAD(energest_example_process, ev, data)
 
 
   etimer_set(&periodic_timer, CLOCK_SECOND * 1);
-  stimer_set(&second_timer, 150); // Start the timer.
-  printf("\nTimer started for 150 seconds\n");
+  stimer_set(&second_timer, 600); // Start the timer.
+  printf("\nTimer started for 600 seconds\n");
   while(1) {
 
     if(stimer_expired(&second_timer)) {
-      printf("\n150 seconds expired\n");
+      printf("\n600 seconds expired\n");
       printf("\nStopping process\n");
       break;
     }
