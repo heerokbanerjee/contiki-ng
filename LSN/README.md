@@ -4,3 +4,5 @@ In the following view link is our paper (report), explaining what we've done and
 
 Paper:
 https://www.overleaf.com/read/xtmcdqsxhqnm
+
+[embed]http://www.heerokbanerjee.in/papers/TSCHand6TiSCH.pdf[/embed]
