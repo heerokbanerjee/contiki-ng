@@ -1,0 +1,28 @@
+    struct tsch_slotframe *sf = tsch_schedule_get_slotframe_by_handle(0);
+    if (sf == NULL){
+	printf("NO such slotframe found");
+    } else {
+        printf("Handle: %d", sf->handle);
+        struct tsch_link *tl = tsch_schedule_add_link(sf, 0,LINK_TYPE_NORMAL, &tsch_broadcast_address, 1, 0);
+        if (tl == NULL){
+	    printf("NO such link found");
+        } else {
+            printf("channel: %d", tl->channel_offset);
+        }
+        
+    }
+
+//Node MAC address: 0012.4b00.1932.e320
+
+	printf("\nEnergest:\n");
+	printf(" CPU          %4lus LPM      %4lus DEEP LPM %4lus  Total time %lus\n",
+	   to_seconds(energest_type_time(ENERGEST_TYPE_CPU)),
+	   to_seconds(energest_type_time(ENERGEST_TYPE_LPM)),
+	   to_seconds(energest_type_time(ENERGEST_TYPE_DEEP_LPM)),
+	   to_seconds(ENERGEST_GET_TOTAL_TIME()));
+	printf(" Radio LISTEN %4lus TRANSMIT %4lus OFF      %4lus\n",
+	   to_seconds(energest_type_time(ENERGEST_TYPE_LISTEN)),
+	   to_seconds(energest_type_time(ENERGEST_TYPE_TRANSMIT)),
+	   to_seconds(ENERGEST_GET_TOTAL_TIME()
+		      - energest_type_time(ENERGEST_TYPE_TRANSMIT)
+		      - energest_type_time(ENERGEST_TYPE_LISTEN)));

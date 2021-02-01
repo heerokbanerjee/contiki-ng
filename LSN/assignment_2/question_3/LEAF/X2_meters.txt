@@ -1,0 +1,1021 @@
+rlwrap ../../../../tools/serial-io/serialdump -b115200 /dev/ttyUSB0
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        23s DEEP LPM    0s  Total time 24s
+ Radio LISTEN   12s TRANSMIT    0s OFF        12s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        24s DEEP LPM    0s  Total time 25s
+ Radio LISTEN   12s TRANSMIT    0s OFF        13s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        25s DEEP LPM    0s  Total time 26s
+ Radio LISTEN   12s TRANSMIT    0s OFF        14s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        26s DEEP LPM    0s  Total time 27s
+ Radio LISTEN   12s TRANSMIT    0s OFF        15s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        27s DEEP LPM    0s  Total time 28s
+ Radio LISTEN   12s TRANSMIT    0s OFF        16s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        28s DEEP LPM    0s  Total time 29s
+ Radio LISTEN   12s TRANSMIT    0s OFF        17s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        29s DEEP LPM    0s  Total time 30s
+ Radio LISTEN   12s TRANSMIT    0s OFF        18s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        30s DEEP LPM    0s  Total time 31s
+ Radio LISTEN   12s TRANSMIT    0s OFF        19s
+
+----------------------------------------------------
+
+Connected
+Received 0 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        31s DEEP LPM    0s  Total time 32s
+ Radio LISTEN   12s TRANSMIT    0s OFF        20s
+
+----------------------------------------------------
+[INFO: App       ] Sending 0 to 0012.4b00.1932.e169
+
+Connected
+Received 1 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        32s DEEP LPM    0s  Total time 33s
+ Radio LISTEN   12s TRANSMIT    0s OFF        21s
+
+----------------------------------------------------
+[INFO: App       ] Sending 1 to 0012.4b00.1932.e169
+
+Connected
+Received 2 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        32s DEEP LPM    0s  Total time 34s
+ Radio LISTEN   12s TRANSMIT    0s OFF        22s
+
+----------------------------------------------------
+[INFO: App       ] Sending 2 to 0012.4b00.1932.e169
+
+Connected
+Received 3 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        33s DEEP LPM    0s  Total time 35s
+ Radio LISTEN   12s TRANSMIT    0s OFF        23s
+
+----------------------------------------------------
+[INFO: App       ] Sending 3 to 0012.4b00.1932.e169
+
+Connected
+Received 4 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        34s DEEP LPM    0s  Total time 36s
+ Radio LISTEN   12s TRANSMIT    0s OFF        23s
+
+----------------------------------------------------
+[INFO: App       ] Sending 4 to 0012.4b00.1932.e169
+
+Connected
+Received 5 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        35s DEEP LPM    0s  Total time 37s
+ Radio LISTEN   12s TRANSMIT    0s OFF        24s
+
+----------------------------------------------------
+[INFO: App       ] Sending 5 to 0012.4b00.1932.e169
+
+Connected
+Received 6 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        36s DEEP LPM    0s  Total time 38s
+ Radio LISTEN   12s TRANSMIT    0s OFF        25s
+
+----------------------------------------------------
+[INFO: App       ] Sending 6 to 0012.4b00.1932.e169
+
+Connected
+Received 7 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        37s DEEP LPM    0s  Total time 39s
+ Radio LISTEN   12s TRANSMIT    0s OFF        26s
+
+----------------------------------------------------
+[INFO: App       ] Sending 7 to 0012.4b00.1932.e169
+
+Connected
+Received 8 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        38s DEEP LPM    0s  Total time 40s
+ Radio LISTEN   12s TRANSMIT    0s OFF        27s
+
+----------------------------------------------------
+[INFO: App       ] Sending 8 to 0012.4b00.1932.e169
+
+Connected
+Received 9 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        39s DEEP LPM    0s  Total time 41s
+ Radio LISTEN   12s TRANSMIT    0s OFF        28s
+
+----------------------------------------------------
+[INFO: App       ] Sending 9 to 0012.4b00.1932.e169
+
+Connected
+Received 10 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        40s DEEP LPM    0s  Total time 42s
+ Radio LISTEN   12s TRANSMIT    0s OFF        29s
+
+----------------------------------------------------
+[INFO: App       ] Sending 10 to 0012.4b00.1932.e169
+
+Connected
+Received 11 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        41s DEEP LPM    0s  Total time 43s
+ Radio LISTEN   12s TRANSMIT    0s OFF        30s
+
+----------------------------------------------------
+[INFO: App       ] Sending 11 to 0012.4b00.1932.e169
+
+Connected
+Received 12 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        42s DEEP LPM    0s  Total time 44s
+ Radio LISTEN   12s TRANSMIT    0s OFF        31s
+
+----------------------------------------------------
+[INFO: App       ] Sending 12 to 0012.4b00.1932.e169
+
+Connected
+Received 13 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        43s DEEP LPM    0s  Total time 45s
+ Radio LISTEN   12s TRANSMIT    0s OFF        32s
+
+----------------------------------------------------
+[INFO: App       ] Sending 13 to 0012.4b00.1932.e169
+
+Connected
+Received 14 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        44s DEEP LPM    0s  Total time 46s
+ Radio LISTEN   12s TRANSMIT    0s OFF        33s
+
+----------------------------------------------------
+[INFO: App       ] Sending 14 to 0012.4b00.1932.e169
+
+Connected
+Received 15 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             1s LPM        45s DEEP LPM    0s  Total time 47s
+ Radio LISTEN   12s TRANSMIT    0s OFF        34s
+
+----------------------------------------------------
+[INFO: App       ] Sending 15 to 0012.4b00.1932.e169
+
+Connected
+Received 16 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        46s DEEP LPM    0s  Total time 48s
+ Radio LISTEN   12s TRANSMIT    0s OFF        35s
+
+----------------------------------------------------
+[INFO: App       ] Sending 16 to 0012.4b00.1932.e169
+
+Connected
+Received 17 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        47s DEEP LPM    0s  Total time 49s
+ Radio LISTEN   13s TRANSMIT    0s OFF        36s
+
+----------------------------------------------------
+[INFO: App       ] Sending 17 to 0012.4b00.1932.e169
+
+Connected
+Received 18 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        48s DEEP LPM    0s  Total time 50s
+ Radio LISTEN   13s TRANSMIT    0s OFF        37s
+
+----------------------------------------------------
+[INFO: App       ] Sending 18 to 0012.4b00.1932.e169
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        49s DEEP LPM    0s  Total time 51s
+ Radio LISTEN   13s TRANSMIT    0s OFF        38s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        50s DEEP LPM    0s  Total time 52s
+ Radio LISTEN   13s TRANSMIT    0s OFF        39s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        51s DEEP LPM    0s  Total time 53s
+ Radio LISTEN   13s TRANSMIT    0s OFF        40s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        52s DEEP LPM    0s  Total time 54s
+ Radio LISTEN   13s TRANSMIT    0s OFF        41s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        53s DEEP LPM    0s  Total time 55s
+ Radio LISTEN   13s TRANSMIT    0s OFF        42s
+
+----------------------------------------------------
+
+Connected
+Received 19 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        54s DEEP LPM    0s  Total time 56s
+ Radio LISTEN   13s TRANSMIT    0s OFF        43s
+
+----------------------------------------------------
+[INFO: App       ] Sending 19 to 0012.4b00.1932.e169
+
+Connected
+Received 20 from 0012.4b00.1932.e169
+Received 21 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        55s DEEP LPM    0s  Total time 57s
+ Radio LISTEN   13s TRANSMIT    0s OFF        44s
+
+----------------------------------------------------
+[INFO: App       ] Sending 21 to 0012.4b00.1932.e169
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        56s DEEP LPM    0s  Total time 58s
+ Radio LISTEN   13s TRANSMIT    0s OFF        45s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        57s DEEP LPM    0s  Total time 59s
+ Radio LISTEN   13s TRANSMIT    0s OFF        46s
+
+----------------------------------------------------
+
+Connected
+Received 25 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        58s DEEP LPM    0s  Total time 60s
+ Radio LISTEN   13s TRANSMIT    0s OFF        47s
+
+----------------------------------------------------
+[INFO: App       ] Sending 25 to 0012.4b00.1932.e169
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        59s DEEP LPM    0s  Total time 61s
+ Radio LISTEN   13s TRANSMIT    0s OFF        48s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        60s DEEP LPM    0s  Total time 62s
+ Radio LISTEN   13s TRANSMIT    0s OFF        48s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        61s DEEP LPM    0s  Total time 63s
+ Radio LISTEN   13s TRANSMIT    0s OFF        49s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        62s DEEP LPM    0s  Total time 64s
+ Radio LISTEN   13s TRANSMIT    0s OFF        50s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        63s DEEP LPM    0s  Total time 65s
+ Radio LISTEN   13s TRANSMIT    0s OFF        51s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        64s DEEP LPM    0s  Total time 66s
+ Radio LISTEN   13s TRANSMIT    0s OFF        52s
+
+----------------------------------------------------
+
+Connected
+Received 26 from 0012.4b00.1932.e169
+Received 27 from 0012.4b00.1932.e169
+Received 32 from 0012.4b00.1932.e169
+Received 35 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        65s DEEP LPM    0s  Total time 67s
+ Radio LISTEN   13s TRANSMIT    0s OFF        53s
+
+----------------------------------------------------
+[INFO: App       ] Sending 35 to 0012.4b00.1932.e169
+
+Connected
+Received 36 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        65s DEEP LPM    0s  Total time 68s
+ Radio LISTEN   13s TRANSMIT    0s OFF        54s
+
+----------------------------------------------------
+[INFO: App       ] Sending 36 to 0012.4b00.1932.e169
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        66s DEEP LPM    0s  Total time 69s
+ Radio LISTEN   13s TRANSMIT    0s OFF        55s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        67s DEEP LPM    0s  Total time 70s
+ Radio LISTEN   13s TRANSMIT    0s OFF        56s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        68s DEEP LPM    0s  Total time 71s
+ Radio LISTEN   13s TRANSMIT    0s OFF        57s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        69s DEEP LPM    0s  Total time 72s
+ Radio LISTEN   13s TRANSMIT    0s OFF        58s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        70s DEEP LPM    0s  Total time 73s
+ Radio LISTEN   13s TRANSMIT    0s OFF        59s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        71s DEEP LPM    0s  Total time 74s
+ Radio LISTEN   13s TRANSMIT    0s OFF        60s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        72s DEEP LPM    0s  Total time 75s
+ Radio LISTEN   13s TRANSMIT    0s OFF        61s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        73s DEEP LPM    0s  Total time 76s
+ Radio LISTEN   13s TRANSMIT    0s OFF        62s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        74s DEEP LPM    0s  Total time 77s
+ Radio LISTEN   14s TRANSMIT    0s OFF        63s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        75s DEEP LPM    0s  Total time 78s
+ Radio LISTEN   14s TRANSMIT    0s OFF        64s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        76s DEEP LPM    0s  Total time 79s
+ Radio LISTEN   14s TRANSMIT    0s OFF        65s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        77s DEEP LPM    0s  Total time 80s
+ Radio LISTEN   14s TRANSMIT    0s OFF        66s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        78s DEEP LPM    0s  Total time 81s
+ Radio LISTEN   14s TRANSMIT    0s OFF        67s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        79s DEEP LPM    0s  Total time 82s
+ Radio LISTEN   14s TRANSMIT    0s OFF        68s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        80s DEEP LPM    0s  Total time 83s
+ Radio LISTEN   14s TRANSMIT    0s OFF        69s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             2s LPM        81s DEEP LPM    0s  Total time 84s
+ Radio LISTEN   14s TRANSMIT    0s OFF        70s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        82s DEEP LPM    0s  Total time 85s
+ Radio LISTEN   14s TRANSMIT    0s OFF        71s
+
+----------------------------------------------------
+
+Connected
+Received 39 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        83s DEEP LPM    0s  Total time 86s
+ Radio LISTEN   14s TRANSMIT    0s OFF        72s
+
+----------------------------------------------------
+[INFO: App       ] Sending 39 to 0012.4b00.1932.e169
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        84s DEEP LPM    0s  Total time 87s
+ Radio LISTEN   14s TRANSMIT    0s OFF        73s
+
+----------------------------------------------------
+
+Connected
+Received 41 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        85s DEEP LPM    0s  Total time 88s
+ Radio LISTEN   14s TRANSMIT    0s OFF        74s
+
+----------------------------------------------------
+[INFO: App       ] Sending 41 to 0012.4b00.1932.e169
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        86s DEEP LPM    0s  Total time 89s
+ Radio LISTEN   14s TRANSMIT    0s OFF        74s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        87s DEEP LPM    0s  Total time 90s
+ Radio LISTEN   14s TRANSMIT    0s OFF        75s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        88s DEEP LPM    0s  Total time 91s
+ Radio LISTEN   14s TRANSMIT    0s OFF        76s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        89s DEEP LPM    0s  Total time 92s
+ Radio LISTEN   14s TRANSMIT    0s OFF        77s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        90s DEEP LPM    0s  Total time 93s
+ Radio LISTEN   14s TRANSMIT    0s OFF        78s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        91s DEEP LPM    0s  Total time 94s
+ Radio LISTEN   14s TRANSMIT    0s OFF        79s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        92s DEEP LPM    0s  Total time 95s
+ Radio LISTEN   14s TRANSMIT    0s OFF        80s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        93s DEEP LPM    0s  Total time 96s
+ Radio LISTEN   14s TRANSMIT    0s OFF        81s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        94s DEEP LPM    0s  Total time 97s
+ Radio LISTEN   14s TRANSMIT    0s OFF        82s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        95s DEEP LPM    0s  Total time 98s
+ Radio LISTEN   14s TRANSMIT    0s OFF        83s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        96s DEEP LPM    0s  Total time 99s
+ Radio LISTEN   14s TRANSMIT    0s OFF        84s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        97s DEEP LPM    0s  Total time 100s
+ Radio LISTEN   14s TRANSMIT    0s OFF        85s
+
+----------------------------------------------------
+
+Connected
+Received 50 from 0012.4b00.1932.e169
+Received 55 from 0012.4b00.1932.e169
+Received 62 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        98s DEEP LPM    0s  Total time 101s
+ Radio LISTEN   14s TRANSMIT    0s OFF        86s
+
+----------------------------------------------------
+[INFO: App       ] Sending 62 to 0012.4b00.1932.e169
+
+Connected
+Received 70 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM        99s DEEP LPM    0s  Total time 102s
+ Radio LISTEN   14s TRANSMIT    0s OFF        87s
+
+----------------------------------------------------
+[INFO: App       ] Sending 70 to 0012.4b00.1932.e169
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       100s DEEP LPM    0s  Total time 103s
+ Radio LISTEN   14s TRANSMIT    0s OFF        88s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       101s DEEP LPM    0s  Total time 104s
+ Radio LISTEN   14s TRANSMIT    0s OFF        89s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       102s DEEP LPM    0s  Total time 105s
+ Radio LISTEN   14s TRANSMIT    0s OFF        90s
+
+----------------------------------------------------
+
+Connected
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       102s DEEP LPM    0s  Total time 106s
+ Radio LISTEN   15s TRANSMIT    0s OFF        91s
+
+----------------------------------------------------
+
+Connected
+Received 71 from 0012.4b00.1932.e169
+Received 72 from 0012.4b00.1932.e169
+Received 73 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       103s DEEP LPM    0s  Total time 107s
+ Radio LISTEN   15s TRANSMIT    0s OFF        92s
+
+----------------------------------------------------
+[INFO: App       ] Sending 73 to 0012.4b00.1932.e169
+
+Connected
+Received 76 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       104s DEEP LPM    0s  Total time 108s
+ Radio LISTEN   15s TRANSMIT    0s OFF        93s
+
+----------------------------------------------------
+[INFO: App       ] Sending 76 to 0012.4b00.1932.e169
+
+Connected
+Received 77 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       105s DEEP LPM    0s  Total time 109s
+ Radio LISTEN   15s TRANSMIT    0s OFF        94s
+
+----------------------------------------------------
+[INFO: App       ] Sending 77 to 0012.4b00.1932.e169
+
+Connected
+Received 78 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       106s DEEP LPM    0s  Total time 110s
+ Radio LISTEN   15s TRANSMIT    0s OFF        95s
+
+----------------------------------------------------
+[INFO: App       ] Sending 78 to 0012.4b00.1932.e169
+
+Connected
+Received 79 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       107s DEEP LPM    0s  Total time 111s
+ Radio LISTEN   15s TRANSMIT    0s OFF        96s
+
+----------------------------------------------------
+[INFO: App       ] Sending 79 to 0012.4b00.1932.e169
+
+Connected
+Received 80 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       108s DEEP LPM    0s  Total time 112s
+ Radio LISTEN   15s TRANSMIT    0s OFF        97s
+
+----------------------------------------------------
+[INFO: App       ] Sending 80 to 0012.4b00.1932.e169
+
+Connected
+Received 81 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       109s DEEP LPM    0s  Total time 113s
+ Radio LISTEN   15s TRANSMIT    0s OFF        98s
+
+----------------------------------------------------
+[INFO: App       ] Sending 81 to 0012.4b00.1932.e169
+
+Connected
+Received 82 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       110s DEEP LPM    0s  Total time 114s
+ Radio LISTEN   15s TRANSMIT    0s OFF        99s
+
+----------------------------------------------------
+[INFO: App       ] Sending 82 to 0012.4b00.1932.e169
+
+Connected
+Received 83 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       111s DEEP LPM    0s  Total time 115s
+ Radio LISTEN   15s TRANSMIT    0s OFF       100s
+
+----------------------------------------------------
+[INFO: App       ] Sending 83 to 0012.4b00.1932.e169
+
+Connected
+Received 84 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       112s DEEP LPM    0s  Total time 116s
+ Radio LISTEN   15s TRANSMIT    0s OFF       100s
+
+----------------------------------------------------
+[INFO: App       ] Sending 84 to 0012.4b00.1932.e169
+
+Connected
+Received 85 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       113s DEEP LPM    0s  Total time 117s
+ Radio LISTEN   15s TRANSMIT    0s OFF       101s
+
+----------------------------------------------------
+[INFO: App       ] Sending 85 to 0012.4b00.1932.e169
+
+Connected
+Received 86 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       114s DEEP LPM    0s  Total time 118s
+ Radio LISTEN   15s TRANSMIT    0s OFF       102s
+
+----------------------------------------------------
+[INFO: App       ] Sending 86 to 0012.4b00.1932.e169
+
+Connected
+Received 87 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             3s LPM       115s DEEP LPM    0s  Total time 119s
+ Radio LISTEN   15s TRANSMIT    0s OFF       103s
+
+----------------------------------------------------
+[INFO: App       ] Sending 87 to 0012.4b00.1932.e169
+
+Connected
+Received 88 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             4s LPM       116s DEEP LPM    0s  Total time 120s
+ Radio LISTEN   15s TRANSMIT    0s OFF       104s
+
+----------------------------------------------------
+[INFO: App       ] Sending 88 to 0012.4b00.1932.e169
+
+Connected
+Received 89 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             4s LPM       117s DEEP LPM    0s  Total time 121s
+ Radio LISTEN   15s TRANSMIT    0s OFF       105s
+
+----------------------------------------------------
+[INFO: App       ] Sending 89 to 0012.4b00.1932.e169
+
+Connected
+Received 90 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             4s LPM       118s DEEP LPM    0s  Total time 122s
+ Radio LISTEN   15s TRANSMIT    0s OFF       106s
+
+----------------------------------------------------
+[INFO: App       ] Sending 90 to 0012.4b00.1932.e169
+
+Connected
+Received 91 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             4s LPM       119s DEEP LPM    0s  Total time 123s
+ Radio LISTEN   15s TRANSMIT    0s OFF       107s
+
+----------------------------------------------------
+[INFO: App       ] Sending 91 to 0012.4b00.1932.e169
+
+Connected
+Received 92 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             4s LPM       120s DEEP LPM    0s  Total time 124s
+ Radio LISTEN   15s TRANSMIT    0s OFF       108s
+
+----------------------------------------------------
+[INFO: App       ] Sending 92 to 0012.4b00.1932.e169
+
+Connected
+Received 93 from 0012.4b00.1932.e169
+
+---------------------ENERGY-------------------------
+
+ CPU             4s LPM       121s DEEP LPM    0s  Total time 125s
+ Radio LISTEN   15s TRANSMIT    0s OFF       109s
+
+----------------------------------------------------
+[INFO: App       ] Sending 93 to 0012.4b00.1932.e169
+
+Connected

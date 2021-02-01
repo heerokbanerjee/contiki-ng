@@ -1,0 +1,12 @@
+CONTIKI_PROJECT = root
+all: $(CONTIKI_PROJECT)
+
+MODULES += os/services/shell
+MODULES += dev
+
+MAKE_MAC = MAKE_MAC_TSCH
+MAKE_NET = MAKE_NET_NULLNET
+MAKE_ROUTING = MAKE_ROUTING_NULLROUTING
+
+CONTIKI = ../../../..
+include $(CONTIKI)/Makefile.include
